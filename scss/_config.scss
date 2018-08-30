@@ -1,0 +1,17 @@
+$primary-text-color: #2B2A2C;
+$secondary-text-color: #6A696B;
+$footer-text-color: #8D8D8E;
+
+// Font for nav-menu and nav-btn elements
+%equal-font {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+// Vertical and horyzontal positioning
+%centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
