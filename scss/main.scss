@@ -454,7 +454,13 @@ body {
   }
 }
 
+// Contact modal
+
 #contact {
+  display: none;
+  transform: scale(0);
+  transition: transform 0.3s, opacity 0.4s;
+  transition-delay: 0.2s;
   padding-top: 100px;
   overflow: auto; 
   position: fixed;
@@ -471,15 +477,98 @@ body {
   max-width: 900px;
   height: 676px;
   background-color: #fff;
+  div:nth-child(1) {
+    span {
+      display: block;
+      &:nth-child(1) {
+        font-size: 45px;
+        line-height: 52px;
+        margin-left: -3px;
+        font-weight: bold;
+        padding-top: 33px;
+      }
+      &:nth-child(2) {
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 30px;
+      }
+    }
+    div .tel-mail {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
+      padding-bottom: 6px;
+      padding-left: 4px;
+    }
+  }
   div:nth-child(2) {
     background-color: #717072;
     position: relative;
-    a, i {
+    padding: 0;
+    i {
       color: $primary-text-color;
       font-size: 35px;
       position: absolute;
-      top: 6px;
-      right: 6px;
+      top: 8px;
+      right: 8px;
+      transition: 0.35s;
     }
+    i:hover {
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+  }
+}
+
+#contact-left {
+  padding-left: 35px;
+}
+
+.fa-envelope {
+  font-size: 14px;
+}
+
+form {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 35px;
+  input {
+    outline: none; // removing outline around input on focus
+    font-weight: 300;  
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    border-radius: 30px;
+    padding-left: 28px;
+    width: 375px;
+    height: 54px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+  textarea {
+    outline: none;
+    font-weight: 300;  
+    border: 1px solid rgba(112, 112, 112, 0.3);
+    border-radius: 30px;
+    padding: 20px 28px;
+    width: 375px;
+    height: 200px;
+    resize: none;
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+}
+
+#contact-btn {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  border: 1px solid $footer-text-color;
+  border-radius: 30px;
+  padding: 17px 60px;
+  float: right;
+  clear: both;
+  margin-right: 25px;
+  &:hover {
+    color: #EFEFEF;
+    border: 1px solid #EFEFEF;
   }
 }

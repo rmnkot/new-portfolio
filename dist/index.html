@@ -44,7 +44,7 @@
         <a href="ua.html" title="Ukrainian">UA</a>
       </div>
       <div class="col-sm-2 d-flex justify-content-end align-items-center">
-        <div id="nav-btn" class="btn">HIRE ME</div>
+        <div id="nav-btn" class="btn" onclick="openContact()">HIRE ME</div>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
               <a href=""><i class="fab fa-skype"></i></a>
             </div>
             <div id="top-btn-block">
-              <div id="top-btn1" class="btn">HIRE ME</div>
+              <div id="top-btn1" class="btn" onclick="openContact()">HIRE ME</div>
               <div id="top-btn2" class="btn">SEE MY RESUME</div>
             </div>
           </div>
@@ -128,7 +128,7 @@
           </span>
         </div>
         <div id="about-btn-block">
-          <div id="about-btn1" class="btn">HIRE ME</div>
+          <div id="about-btn1" class="btn" onclick="openContact()">HIRE ME</div>
           <div id="about-btn2" class="btn">SEE MY RESUME</div>
         </div>
       </div>
@@ -178,18 +178,34 @@
           <a href="#about">About Me</a>
         </div>
         <div class="col-sm-2 d-flex align-items-center justify-content-end">
-          <div id="foot-btn" class="btn">HIRE ME</div>
+          <div id="foot-btn" class="btn" onclick="openContact()">HIRE ME</div>
         </div>
       </div>
     </div>
   </div>
   <div id="contact">
     <div id="contact-content" class="row">
-      <div class="col-6">
+      <div id="contact-left" class="col-6">
+        <span>LET'S TALK!</span>
+        <span>CALL ME OR SEND ME A REQUEST</span>
+        <div><i class="fas fa-phone-square"></i>
+          <span class="tel-mail">+38 (097) 914-45-13</span>
+        </div>
+        <div><i class="fas fa-envelope"></i>
+          <span class="tel-mail">mnkot@gmail.com</span>
+        </div>
+        <form action="">
+          Adress e-mail<br>
+          <input type="text" name="adress" placeholder="Adress e-mail"><br> Request
+          <br>
+          <textarea type="text" name="request" placeholder="Type your request..."></textarea>
+        </form>
+        <div id="contact-btn" class="btn">SEND</div>
 
       </div>
       <div class="col-6">
-        <a href="#"><i class="fas fa-times-circle"></i></a>
+        <img src="img/contact_photo.jpg" alt="contact_photo">
+        <i onclick="closeContact()" class="fas fa-times-circle"></i>
       </div>
     </div>
   </div>
