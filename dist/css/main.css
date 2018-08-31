@@ -370,4 +370,30 @@ body {
   #foot-btn:hover {
     color: #EFEFEF;
     border: 1px solid #EFEFEF; }
+
+#contact {
+  padding-top: 100px;
+  overflow: auto;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0; }
+
+#contact-content {
+  margin: auto;
+  max-width: 900px;
+  height: 676px;
+  background-color: #fff; }
+  #contact-content div:nth-child(2) {
+    background-color: #717072;
+    position: relative; }
+    #contact-content div:nth-child(2) a, #contact-content div:nth-child(2) i {
+      color: #2B2A2C;
+      font-size: 35px;
+      position: absolute;
+      top: 6px;
+      right: 6px; }
 /*# sourceMappingURL=main.css.map */
