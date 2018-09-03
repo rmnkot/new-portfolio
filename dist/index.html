@@ -44,7 +44,7 @@
         <a href="ua.html" title="Ukrainian">UA</a>
       </div>
       <div class="col-sm-2 d-flex justify-content-end align-items-center">
-        <div id="nav-btn" class="btn" onclick="openContact()">HIRE ME</div>
+        <div id="nav-btn" class="btn" onclick="openModal('#contact')">HIRE ME</div>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@
               <a href=""><i class="fab fa-skype"></i></a>
             </div>
             <div id="top-btn-block">
-              <div id="top-btn1" class="btn" onclick="openContact()">HIRE ME</div>
+              <div id="top-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
               <div id="top-btn2" class="btn">SEE MY RESUME</div>
             </div>
           </div>
@@ -85,7 +85,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#selez')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Selezione.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -93,7 +93,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#base')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Base_course.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -101,7 +101,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#portf')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Profile.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -128,7 +128,7 @@
           </span>
         </div>
         <div id="about-btn-block">
-          <div id="about-btn1" class="btn" onclick="openContact()">HIRE ME</div>
+          <div id="about-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
           <div id="about-btn2" class="btn">SEE MY RESUME</div>
         </div>
       </div>
@@ -147,7 +147,7 @@
         <div id="f-ava-photo"></div>
       </div>
       <div>Sergey F.</div>
-      <div><i>Selezione corp.</i></div>
+      <div><i>Selezione</i></div>
       <div>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -178,13 +178,13 @@
           <a href="#about">About Me</a>
         </div>
         <div class="col-sm-2 d-flex align-items-center justify-content-end">
-          <div id="foot-btn" class="btn" onclick="openContact()">HIRE ME</div>
+          <div id="foot-btn" class="btn" onclick="openModal('#contact')">HIRE ME</div>
         </div>
       </div>
     </div>
   </div>
   <div id="contact">
-    <div id="contact-content" class="row">
+    <div id="contact-container" class="row">
       <div id="contact-left" class="col-6">
         <span>LET'S TALK!</span>
         <span>CALL ME OR SEND ME A REQUEST</span>
@@ -205,10 +205,84 @@
       </div>
       <div class="col-6">
         <img src="img/contact_photo.jpg" alt="contact_photo">
-        <i onclick="closeContact()" class="fas fa-times-circle"></i>
+        <i onclick="closeModal()" class="fas fa-times-circle"></i>
       </div>
     </div>
   </div>
+  <div id="portfolio">
+    <div id="portfolio-container">
+      <i onclick="closeModal()" class="fas fa-times-circle"></i>
+      <div id="prev-btn" class="btn" onclick="prev()">&#10094;&nbsp;&nbsp;PREVIOUS</div>
+      <div id="next-btn" class="btn" onclick="next()">NEXT&nbsp;&nbsp;&#10095;</div>
+      <div id="selez" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/selez1_1.jpg" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>SELEZIONE STORE</span>
+          <span>WEB | 2018</span>
+          <span>Client:</span>
+          <span>Selezione</span>
+          <span>This particular project was built on the demand of the client about a simple internet store. So, it was decided
+            to choose free WordPress template with WooCommerce. That template was restyled and recieve different modifications
+            due to client's vision of the final product.</span>
+          <span>You can find this website here:</span>
+          <a class="site-link" href="http://wordpress-new-com.stackstaging.com">wordpress-new-com.stackstaging.com</a>
+        </div>
+      </div>
+      <div id="base" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/base1.jpg" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>BASE COURCE</span>
+          <span>WEB | 2018</span>
+          <span>Client:</span>
+          <span>S.Podlypska</span>
+          <span>This project was built totaly from scratch either code and design.</span>
+          <span>You can find this website here:</span>
+          <a class="site-link" href="http://www.testing-proj.cc.ua">www.testing-proj.cc.ua</a>
+        </div>
+      </div>
+      <div id="portf" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/portfolio1.jpg" alt="portfolio1">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>PORTFOLIO</span>
+          <span>WEB | 2018</span>
+          <span>Client:</span>
+          <span>S.Podlypska</span>
+          <span>This portfolio landing page was built by utilizing and deeply modifying free template. Changes were apply
+            only to HTML and CSS.</span>
+          <span>You can find this website here:</span>
+          <a class="site-link" href="http://rmnkot-com.stackstaging.com/">www.rmnkot-com.stackstaging.com</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Custom JavaScript -->
   <script src="js/app.js"></script>

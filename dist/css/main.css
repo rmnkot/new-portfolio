@@ -174,7 +174,9 @@ body {
   clear: both;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s; }
   .project-card div:nth-child(2) {
     font-size: 12px;
     font-weight: 400;
@@ -189,6 +191,12 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 0 14px 10px 0; }
+  .project-card:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); }
 
 .scr-shot {
   background-color: #717072;
@@ -391,34 +399,34 @@ body {
   top: 0;
   left: 0; }
 
-#contact-content {
+#contact-container {
   margin: auto;
   max-width: 900px;
   height: 676px;
   background-color: #fff; }
-  #contact-content div:nth-child(1) span {
+  #contact-container div:nth-child(1) span {
     display: block; }
-    #contact-content div:nth-child(1) span:nth-child(1) {
+    #contact-container div:nth-child(1) span:nth-child(1) {
       font-size: 45px;
       line-height: 52px;
       margin-left: -3px;
       font-weight: bold;
       padding-top: 33px; }
-    #contact-content div:nth-child(1) span:nth-child(2) {
+    #contact-container div:nth-child(1) span:nth-child(2) {
       font-size: 16px;
       font-weight: 400;
       padding-bottom: 30px; }
-  #contact-content div:nth-child(1) div .tel-mail {
+  #contact-container div:nth-child(1) div .tel-mail {
     display: inline-block;
     font-size: 14px;
     font-weight: 300;
     padding-bottom: 6px;
     padding-left: 4px; }
-  #contact-content div:nth-child(2) {
+  #contact-container div:nth-child(2) {
     background-color: #717072;
     position: relative;
     padding: 0; }
-    #contact-content div:nth-child(2) i {
+    #contact-container div:nth-child(2) i {
       color: #2B2A2C;
       font-size: 35px;
       position: absolute;
@@ -426,7 +434,7 @@ body {
       right: 8px;
       -webkit-transition: 0.35s;
       transition: 0.35s; }
-    #contact-content div:nth-child(2) i:hover {
+    #contact-container div:nth-child(2) i:hover {
       -webkit-transform: rotate(90deg);
               transform: rotate(90deg);
       cursor: pointer; }
@@ -476,4 +484,114 @@ form {
   #contact-btn:hover {
     color: #EFEFEF;
     border: 1px solid #EFEFEF; }
+
+#portfolio {
+  display: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.3s;
+  transition: opacity 0.4s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.4s;
+  transition: transform 0.3s, opacity 0.4s, -webkit-transform 0.3s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  padding-top: 100px;
+  overflow: auto;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0; }
+
+#portfolio-container {
+  margin: auto;
+  max-width: 1200px;
+  height: 774px;
+  background-color: #fff;
+  position: relative; }
+  #portfolio-container i {
+    color: #2B2A2C;
+    font-size: 35px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    z-index: 1000; }
+  #portfolio-container i:hover {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    cursor: pointer; }
+  #portfolio-container #prev-btn, #portfolio-container #next-btn {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    z-index: 1000;
+    border-radius: 30px;
+    padding-right: 20px;
+    padding-left: 20px; }
+  #portfolio-container #prev-btn {
+    left: 820px; }
+  #portfolio-container #next-btn {
+    right: 15px; }
+
+.portfolio-content {
+  display: none;
+  height: 774px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+  .portfolio-content .portfolio-left {
+    background-color: #717072;
+    padding: 0; }
+    .portfolio-content .portfolio-left img {
+      width: 100%; }
+  .portfolio-content .portfolio-right span {
+    display: block;
+    padding-left: 15px;
+    padding-right: 30px;
+    text-align: justify; }
+    .portfolio-content .portfolio-right span:nth-child(1) {
+      font-size: 32px;
+      font-weight: bold;
+      color: #2B2A2C;
+      margin-top: 50px; }
+    .portfolio-content .portfolio-right span:nth-child(2) {
+      font-size: 18px;
+      font-weight: 400;
+      color: #6A696B; }
+    .portfolio-content .portfolio-right span:nth-child(3) {
+      font-size: 16px;
+      font-weight: bold;
+      color: #2B2A2C;
+      margin-top: 25px; }
+    .portfolio-content .portfolio-right span:nth-child(4) {
+      font-size: 14px;
+      font-weight: 400;
+      color: #6A696B;
+      font-style: italic; }
+    .portfolio-content .portfolio-right span:nth-child(5) {
+      margin-top: 40px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #6A696B;
+      line-height: 1.8em; }
+    .portfolio-content .portfolio-right span:nth-child(6) {
+      font-size: 12px;
+      color: #2B2A2C;
+      margin-top: 25px; }
+
+#portfolio-container a.site-link {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6A696B;
+  font-style: italic;
+  padding-left: 15px;
+  padding-right: 30px; }
 /*# sourceMappingURL=main.css.map */
