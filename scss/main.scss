@@ -603,7 +603,7 @@ form {
   height: 774px;
   background-color: #fff;
   position: relative;
-  i {
+  .fa-times-circle {
     color: $primary-text-color;
     font-size: 35px;
     position: absolute;
@@ -612,9 +612,35 @@ form {
     transition: 0.35s;
     z-index: 1000;
   }
-  i:hover {
+  .fa-times-circle:hover {
     transform: rotate(90deg);
     cursor: pointer;
+  }
+  #fw, #bw {
+    position: absolute;
+    z-index: 1000;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #EFEFEF;
+    opacity: 0.5;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.25s;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      background-color: #717072;
+    }
+  }
+  #fw {
+    left: 750px;
+  }
+  #bw {
+    left: 15px;
   }
   #prev-btn, #next-btn {
     position: absolute;
@@ -647,6 +673,19 @@ form {
     padding: 0;
     img {
       width: 100%;
+      &#active-img {
+        display: block;
+      }
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        display: none;
+      }
+
     }
   }
   .portfolio-right {

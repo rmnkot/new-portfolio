@@ -3,6 +3,10 @@ function openModal(bg, id) {
   // opening a specific project card
   if (id != undefined) {
     const card = document.querySelector(id);
+    // display first image
+    card.firstElementChild.children[0].id = "active-img";
+    card.firstElementChild.children[1].id = "";
+    card.firstElementChild.children[2].id = "";
     card.style.opacity = "1";
     card.style.display = "flex";
     card.classList.add("active-card");
@@ -27,6 +31,10 @@ function closeModal() {
     function delay() {
       card.style.display = "none";
       card.classList.remove("active-card");
+      card.firstElementChild.children[0].id = "";
+      card.firstElementChild.children[1].id = "";
+      card.firstElementChild.children[2].id = "";
+
     }
   }
   const modalId = document.querySelector(".active-modal");
@@ -58,18 +66,28 @@ function closeModalBg(event) {
 function next() {
   const active = document.querySelector(".active-card");
   const list = document.getElementsByClassName("portfolio-content");
-
+  // define what particular object is opened
   for (let i = 0; i < list.length; i++) {
     if (list[i] == active) {
       if (i == (list.length - 1)) {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
+        // hide actual images
+        active.firstElementChild.children[0].id = "";
+        active.firstElementChild.children[1].id = "";
+        active.firstElementChild.children[2].id = "";
+
         active.classList.remove("active-card");
         // opening next object
         list[0].style.display = "flex";
         setTimeout(delay, 100);
         function delay() {
+          // display next images
+          list[0].firstElementChild.children[0].id = "active-img";
+          list[0].firstElementChild.children[1].id = "";
+          list[0].firstElementChild.children[2].id = "";
+
           list[0].style.opacity = "1";
           list[0].classList.add("active-card");
         }
@@ -77,11 +95,21 @@ function next() {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
+        // hide actual images
+        active.firstElementChild.children[0].id = "";
+        active.firstElementChild.children[1].id = "";
+        active.firstElementChild.children[2].id = "";
+
         active.classList.remove("active-card");
         // opening next object
         list[i + 1].style.display = "flex";
         setTimeout(delay1, 100);
         function delay1() {
+          // display next images          
+          list[i + 1].firstElementChild.children[0].id = "active-img";
+          list[i + 1].firstElementChild.children[1].id = "";
+          list[i + 1].firstElementChild.children[2].id = "";
+
           list[i + 1].style.opacity = "1";
           list[i + 1].classList.add("active-card");
         }
@@ -94,18 +122,28 @@ function next() {
 function prev() {
   const active = document.querySelector(".active-card");
   const list = document.getElementsByClassName("portfolio-content");
-
+  // define what particular object is opened
   for (let i = 0; i < list.length; i++) {
     if (list[i] == active) {
       if (i == 0) {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
+        // hide actual images
+        active.firstElementChild.children[0].id = "";
+        active.firstElementChild.children[1].id = "";
+        active.firstElementChild.children[2].id = "";
+
         active.classList.remove("active-card");
         // opening next object
         list[(list.length - 1)].style.display = "flex";
         setTimeout(delay, 100);
         function delay() {
+          // display next images
+          list[(list.length - 1)].firstElementChild.children[0].id = "active-img";
+          list[(list.length - 1)].firstElementChild.children[1].id = "";
+          list[(list.length - 1)].firstElementChild.children[2].id = "";
+
           list[(list.length - 1)].style.opacity = "1";
           list[(list.length - 1)].classList.add("active-card");
         }
@@ -113,14 +151,58 @@ function prev() {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
+        // hide actual images
+        active.firstElementChild.children[0].id = "";
+        active.firstElementChild.children[1].id = "";
+        active.firstElementChild.children[2].id = "";
+
         active.classList.remove("active-card");
         // opening next object
         list[i - 1].style.display = "flex";
         setTimeout(delay1, 100);
         function delay1() {
+          // display next images          
+          list[i - 1].firstElementChild.children[0].id = "active-img";
+          list[i - 1].firstElementChild.children[1].id = "";
+          list[i - 1].firstElementChild.children[2].id = "";
+
           list[i - 1].style.opacity = "1";
           list[i - 1].classList.add("active-card");
         }
+      }
+    }
+  }
+}
+
+function fw() {
+  const list = document.querySelector(".active-card").firstElementChild.children;
+  const element = document.querySelector("#active-img");
+
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] == element) {
+      if (i == (list.length - 1)) {
+        element.id = "";
+        list[0].id = "active-img";
+      } else {
+        element.id = "";
+        list[i + 1].id = "active-img";
+      }
+    }
+  }
+}
+
+function bw() {
+  const list = document.querySelector(".active-card").firstElementChild.children;
+  const element = document.querySelector("#active-img");
+
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] == element) {
+      if (i == 0) {
+        element.id = "";
+        list[(list.length - 1)].id = "active-img";
+      } else {
+        element.id = "";
+        list[i - 1].id = "active-img";
       }
     }
   }

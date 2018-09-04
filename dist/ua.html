@@ -85,7 +85,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#selez')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Selezione.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -93,7 +93,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#base')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Base_course.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -101,7 +101,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#portf')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Profile.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -184,7 +184,7 @@
     </div>
   </div>
   <div id="contact">
-    <div id="contact-content" class="row">
+    <div id="contact-container" class="row">
       <div id="contact-left" class="col-6">
         <span>ПОГОВОРИМО!</span>
         <span>ПОДЗВОНІТЬ АБО НАПИШІТЬ МЕНІ</span>
@@ -201,7 +201,6 @@
           <textarea type="text" name="request" placeholder="Напишіть ваш запит..."></textarea>
         </form>
         <div id="contact-btn" class="btn">ВІДПРАВИТИ</div>
-
       </div>
       <div class="col-6">
         <img src="img/contact_photo.jpg" alt="contact_photo">
@@ -209,6 +208,81 @@
       </div>
     </div>
   </div>
+  <div id="portfolio">
+    <div id="portfolio-container">
+      <i onclick="closeModal()" class="fas fa-times-circle"></i>
+      <div id="fw" onclick="fw()"><i class="fas fa-chevron-right"></i></div>
+      <div id="bw" onclick="bw()"><i class="fas fa-chevron-left"></i></div>
+      <div id="prev-btn" class="btn" onclick="prev()">&#10094;&nbsp;&nbsp;ПОПЕРЕДНІЙ</div>
+      <div id="next-btn" class="btn" onclick="next()">НАСТУПНИЙ&nbsp;&nbsp;&#10095;</div>
+      <div id="selez" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/selez1.jpg" alt="">
+          <img src="img/selez2.jpg" alt="">
+          <img src="img/selez3.jpg" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>SELEZIONE МАГАЗИН</span>
+          <span>WEB | 2018</span>
+          <span>Замовник:</span>
+          <span>Selezione</span>
+          <span>Цей проект був створений з урахуванням побажань замовника про достатньо простий за функціоналом інтернет
+            магазин. Тому вирішено було скористатися безкоштовним шаблоном для WordPress з використанням WooCommerce. Шаблон
+            було стилізовано по-новому, застосували додаткові плагіни та деякі модифікації на рівні коду, щоб відповідати
+            баченню клієнта про кінцевий продукт.</span>
+          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
+          <a class="site-link" href="http://wordpress-new-com.stackstaging.com">wordpress-new-com.stackstaging.com</a>
+        </div>
+      </div>
+      <div id="base" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/base1.jpg" alt="">
+          <img src="img/base2.jpg" alt="">
+          <img src="img/base3.jpg" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>БАЗОВИЙ КУРС</span>
+          <span>WEB | 2018</span>
+          <span>Замовник:</span>
+          <span>С.Підлипська</span>
+          <span>Цей проект було створено з чистого аркуша. Дизайн веб-сайту розроблявся колегою-дизайнером, а за його реалізацію
+            відповідав я. CSS стилі писалися за допомогою SCSS препроцесора, а JavaScript був використаний для надання динаміки
+            елементам сторінки.</span>
+          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
+          <a class="site-link" href="http://www.testing-proj.cc.ua">www.testing-proj.cc.ua</a>
+        </div>
+      </div>
+      <div id="portf" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/portfolio1.jpg" alt="portfolio1">
+          <img src="img/portfolio2.jpg" alt="">
+          <img src="img/portfolio3.jpg" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>ПОРТФОЛІО</span>
+          <span>WEB | 2018</span>
+          <span>Замовник:</span>
+          <span>С.Підлипська</span>
+          <span>Ця робота була виконана з використанням безкоштовного шаблону та його глибокої модифікації. Зміни застосовувалися
+            тільки до HTML та CSS.</span>
+          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
+          <a class="site-link" href="http://rmnkot-com.stackstaging.com/">www.rmnkot-com.stackstaging.com</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- Custom JavaScript -->
