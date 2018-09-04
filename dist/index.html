@@ -64,11 +64,11 @@
               <a href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-square"></i></a>
               <a href="https://github.com/rmnkot"><i class="fab fa-github-square"></i></a>
               <a href="https://twitter.com/rmnkot"><i class="fab fa-twitter-square"></i></a>
-              <a href=""><i class="fab fa-skype"></i></a>
+              <a href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
             </div>
             <div id="top-btn-block">
               <div id="top-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
-              <div id="top-btn2" class="btn">SEE MY RESUME</div>
+              <div id="top-btn2" class="btn" onclick="openModal('#resume')">SEE MY RESUME</div>
             </div>
           </div>
         </div>
@@ -85,6 +85,14 @@
       </div>
     </div>
     <div class="row justify-content-center">
+      <!-- <div onclick="openModal('#portfolio','#my-portf')" class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <img src="" class="scr-shot" />
+          <div>WEB</div>
+          <div>MY PORTFOLIO</div>
+          <div>2018</div>
+        </div>
+      </div> -->
       <div onclick="openModal('#portfolio','#selez')" class="col-lg-4 col-md-6">
         <div class="project-card">
           <img src="img/Selezione.jpg" class="scr-shot" />
@@ -109,6 +117,14 @@
           <div>2018</div>
         </div>
       </div>
+      <div onclick="openModal('#portfolio','#fex')" class="col-lg-4 col-md-6">
+        <div class="project-card">
+          <img src="img/fex_main.jpg" class="scr-shot" />
+          <div>WEB</div>
+          <div>FEX.NET COPY</div>
+          <div>2018</div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="container">
@@ -129,7 +145,7 @@
         </div>
         <div id="about-btn-block">
           <div id="about-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
-          <div id="about-btn2" class="btn">SEE MY RESUME</div>
+          <div id="about-btn2" class="btn" onclick="openModal('#resume')">SEE MY RESUME</div>
         </div>
       </div>
     </div>
@@ -170,7 +186,7 @@
           <a href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-f"></i></a>
           <a href="https://github.com/rmnkot"><i class="fab fa-github"></i></a>
           <a href="https://twitter.com/rmnkot"><i class="fab fa-twitter"></i></a>
-          <a href=""><i class="fab fa-skype"></i></a>
+          <a href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
         </div>
         <div id="foot-menu" class="col-sm-3 d-flex align-items-center justify-content-around">
           <a href="#">Home</a>
@@ -194,11 +210,11 @@
         <div><i class="fas fa-envelope"></i>
           <span class="tel-mail">mnkot@gmail.com</span>
         </div>
-        <form action="">
+        <form method="POST" action="https://formspree.io/rmnkot@gmail.com">
           Adress e-mail<br>
-          <input type="text" name="adress" placeholder="Adress e-mail"><br> Request
+          <input type="text" name="adress" id="adress" placeholder="Adress e-mail"><br> Request
           <br>
-          <textarea type="text" name="request" placeholder="Type your request..."></textarea>
+          <textarea type="text" name="request" id="request" placeholder="Type your request..."></textarea>
         </form>
         <div id="contact-btn" class="btn">SEND</div>
       </div>
@@ -215,6 +231,23 @@
       <div id="bw" onclick="bw()"><i class="fas fa-chevron-left"></i></div>
       <div id="prev-btn" class="btn" onclick="prev()">&#10094;&nbsp;&nbsp;PREVIOUS</div>
       <div id="next-btn" class="btn" onclick="next()">NEXT&nbsp;&nbsp;&#10095;</div>
+      <!-- <div id="my-portf" class="row portfolio-content">
+          <div class="col-8 portfolio-left">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <div class="col-4 portfolio-right">
+            <span>MY PORTFOLIO</span>
+            <span>WEB | 2018</span>
+            <span>Client:</span>
+            <span>Me</span>
+            <span>This time I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on the
+              top of it. As a design lead, free template was taken but responsiveness was created by myself.</span>
+            <span>You can find this website here:</span>
+            <a class="site-link" href="">.....</a>
+          </div>
+        </div> -->
       <div id="selez" class="row portfolio-content">
         <div class="col-8 portfolio-left">
           <img src="img/selez1.jpg" alt="">
@@ -266,24 +299,134 @@
           <a class="site-link" href="http://rmnkot-com.stackstaging.com/">www.rmnkot-com.stackstaging.com</a>
         </div>
       </div>
-
-
+      <div id="fex" class="row portfolio-content">
+        <div class="col-8 portfolio-left">
+          <img src="img/fex.jpg" alt="fex">
+          <img src="img/fex.jpg" alt="">
+          <img src="img/fex.jpg" alt="">
+        </div>
+        <div class="col-4 portfolio-right">
+          <span>FEX.NET COPY</span>
+          <span>WEB | 2018</span>
+          <span>Client:</span>
+          <span>Studying purpos</span>
+          <span>Pixel perfect copy of FEX.NET front page.</span>
+          <span>You can find this website here:</span>
+          <a class="site-link" href="#">...</a>
+        </div>
+      </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <div id="resume">
+    <div id="resume-container">
+      <i onclick="closeModal()" class="fas fa-times-circle"></i>
+      <span>RESUME</span>
+      <div id="resume-btn-block">
+        <div id="resume-btn1" class="btn">DOWNLOAD PDF</div>
+        <div id="resume-btn2" class="btn">PRINT</div>
+      </div>
+      <div id="resume-content" class="row ">
+        <div class="col-6 resume-left">
+          <h1>EXPERIENCE</h1>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Frelancer</h2>
+            <h3>My portfolio.</h3>
+            <p>For this purpos I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on the
+              top of it. As a design lead, free template was taken but responsiveness was created by myself.</p>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Frelancer</h2>
+            <h3>E-Commerce project.</h3>
+            <p>I've built an internet store of italian products. The client demands were pretty simple, so I've decided to
+              use WordPress template and modify it.</p>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Frelancer</h2>
+            <h3>Basic project.</h3>
+            <p>This work was made from scratch in pure HTML/CSS with the help of SCSS preprocessor and JavaScript for dynamic
+              content.
+            </p>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Frelancer</h2>
+            <h3>Psychologist Portfolio.</h3>
+            <p>That website was built on template by making deep modifications.</p>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Frelancer</h2>
+            <h3>FEX.NET copy.</h3>
+            <p>Pixel perfect copy of FEX.NET front page.</p>
+          </div>
+        </div>
+        <div class="col-6 resume-right">
+          <h1>EDUCATION</h1>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>W3Schools Online Web Tutorials</h2>
+            <h4>on www.w3schools.com</h4>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>The Complete Web Developer Course 2.0</h2>
+            <h4>by Rob Persival on www.udemy.com</h4>
+          </div>
+          <div>
+            <h4 class="year">2018</h4>
+            <h2>Modern JavaScript From The Beginning</h2>
+            <h4>by Brad Traversy on www.udemy.com</h4>
+          </div>
+          <br><br>
+          <h1>SKILLS</h1>
+          <table>
+            <colgroup>
+              <col>
+            </colgroup>
+            <tr>
+              <td>HTML</td>
+              <td><progress value="81" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td><progress value="74" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>SCSS</td>
+              <td><progress value="56" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td><progress value="33" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td><progress value="50" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>JQuery</td>
+              <td><progress value="37" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>WordPress</td>
+              <td><progress value="28" max="100"></progress></td>
+            </tr>
+            <tr>
+              <td>PHP</td>
+              <td><progress value="15" max="100"></progress></td>
+            </tr>
+          </table>
+          <h1>CERTIFICATE</h1>
+          <br>
+          <h2>CCA Certificate CSS Level 1</h2>
+          <h2>CCA Certificate HTML Level 1</h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Custom JavaScript -->
   <script src="js/app.js"></script>

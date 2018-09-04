@@ -53,6 +53,9 @@ document.querySelector("#contact").addEventListener("click", closeModalBg)
 // Set event listener on the portfolio window
 document.querySelector("#portfolio").addEventListener("click", closeModalBg)
 
+// Set event listener on the resume window
+document.querySelector("#resume").addEventListener("click", closeModalBg)
+
 
 // Close modal window when the user clicks anywhere on the background, outside of the modal box
 function closeModalBg(event) {

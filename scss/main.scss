@@ -233,7 +233,7 @@ body {
   &:hover {
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    transform: translateY(-1px);
+    transform: translateY(-3px);
   }
 }
 
@@ -462,12 +462,13 @@ body {
 
 // Contact modal
 
-#contact { // remember to merge this block for all modals later !!
+#contact, #portfolio, #resume { 
   display: none;
   transform: scale(0);
   transition: transform 0.3s, opacity 0.4s;
   transition-delay: 0.2s;
   padding-top: 100px;
+  padding-bottom: 100px;
   overflow: auto; 
   position: fixed;
   z-index: 10;
@@ -580,22 +581,6 @@ form {
 }
 
 // Portfolio modal
-
-#portfolio {
-  display: none;
-  transform: scale(0);
-  transition: transform 0.3s, opacity 0.4s;
-  transition-delay: 0.2s;
-  padding-top: 100px;
-  overflow: auto; 
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  top: 0;
-  left: 0;
-}
 
 #portfolio-container {
   margin: auto;
@@ -740,4 +725,146 @@ form {
   font-style: italic;
   padding-left: 15px;
   padding-right: 30px;
+}
+
+// Resume modal
+
+#resume-container {
+  margin: auto;
+  max-width: 1000px;
+  height: 1100px;
+  background-color: #fff;
+  padding-top: 70px;
+  position: relative;
+  .fa-times-circle {
+    color: $primary-text-color;
+    font-size: 35px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    transition: 0.35s;
+    z-index: 1000;
+  }
+  .fa-times-circle:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+  span {
+    display: block;
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+  }
+}
+
+#resume-btn-block {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#resume-btn1, #resume-btn2  {
+  border: 1px solid $secondary-text-color;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  color: $secondary-text-color;
+  letter-spacing: 0.5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+#resume-btn1 {
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 13px;
+}
+
+#resume-btn2 {
+  padding-left: 52px;
+  padding-right: 52px;
+}
+
+#resume-content {
+  margin-top: 45px;
+  .year {
+    text-decoration: underline;
+  }
+  .resume-left {
+    border-right: 1px solid $primary-text-color;
+    text-align: right;
+    padding-right: 50px;
+    padding-left:80px;
+    div {
+      margin-top: 30px;
+    }
+  }
+  .resume-right {
+    padding-left: 50px;
+    padding-right: 80px;
+    div {
+      margin-top: 30px;
+    }
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: $primary-text-color;
+    letter-spacing: 0.7px;
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: $primary-text-color;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $primary-text-color;
+  }
+  h3 {
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    color: $secondary-text-color;
+    margin-bottom: 0;
+  }
+}
+table {
+  font-size: 14px;
+  font-weight: 300;
+  color: $primary-text-color;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  col {
+    width: 100px;
+  }
+  tr {
+    height: 25px;
+  }
+  progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+  }
+  progress {
+    vertical-align: middle;
+    font-size: 6px;
+    width: 160px;
+  }
+  // styling trick for progress bar
+  progress[value]::-webkit-progress-bar {
+    background-color: #EFEFEF;
+  }
+  progress[value]::-webkit-progress-value {
+    background-color: $secondary-text-color;
+  }
 }
