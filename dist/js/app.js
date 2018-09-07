@@ -1,3 +1,48 @@
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-bar").style.top = "0";
+  } else {
+    document.getElementById("nav-bar").style.top = "-82px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+// Smooth scroll on link triggering
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (event) {
+//     event = event || window.event; // cross browser solution
+//     event.preventDefault();
+//     document.querySelector(this.getAttribute('href')).scrollIntoView({
+//       behavior: 'smooth',
+//       block: 'start'
+//     });
+//   });
+// });
+
+// Open hamburger menu
+function openBurger() {
+  const menu = document.querySelector("#drop-down").children;
+  let i = 0;
+  const myVal = setInterval(slide1, 80);
+  function slide1() {
+    if (i < menu.length - 1) {
+      menu[i].classList.toggle("active-slide-down");
+      i++;
+    } else {
+      menu[menu.length - 1].classList.toggle("active-btn-down");
+      clearInterval(myVal);
+    }
+  }
+
+}
+
+
+
+
+
 // Open modal window
 function openModal(bg, id) {
   // opening a specific project card
@@ -48,14 +93,13 @@ function closeModal() {
 }
 
 // Set event listener on the contact window
-document.querySelector("#contact").addEventListener("click", closeModalBg)
+document.querySelector("#contact").addEventListener("click", closeModalBg);
 
 // Set event listener on the portfolio window
-document.querySelector("#portfolio").addEventListener("click", closeModalBg)
+document.querySelector("#portfolio").addEventListener("click", closeModalBg);
 
 // Set event listener on the resume window
-document.querySelector("#resume").addEventListener("click", closeModalBg)
-
+document.querySelector("#resume").addEventListener("click", closeModalBg);
 
 // Close modal window when the user clicks anywhere on the background, outside of the modal box
 function closeModalBg(event) {
@@ -76,7 +120,7 @@ function next() {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
-        // hide actual images
+        // hide actual image
         active.firstElementChild.children[0].id = "";
         active.firstElementChild.children[1].id = "";
         active.firstElementChild.children[2].id = "";
@@ -86,7 +130,7 @@ function next() {
         list[0].style.display = "flex";
         setTimeout(delay, 100);
         function delay() {
-          // display next images
+          // display next image
           list[0].firstElementChild.children[0].id = "active-img";
           list[0].firstElementChild.children[1].id = "";
           list[0].firstElementChild.children[2].id = "";
@@ -98,7 +142,7 @@ function next() {
         // closing actual object
         active.style.display = "none";
         active.style.opacity = "0";
-        // hide actual images
+        // hide actual image
         active.firstElementChild.children[0].id = "";
         active.firstElementChild.children[1].id = "";
         active.firstElementChild.children[2].id = "";
@@ -108,7 +152,7 @@ function next() {
         list[i + 1].style.display = "flex";
         setTimeout(delay1, 100);
         function delay1() {
-          // display next images          
+          // display next image         
           list[i + 1].firstElementChild.children[0].id = "active-img";
           list[i + 1].firstElementChild.children[1].id = "";
           list[i + 1].firstElementChild.children[2].id = "";

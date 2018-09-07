@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
 
   <!-- Custom CSS -->
@@ -26,9 +26,9 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="nav-bar" class="row">
-      <div class="col-sm-6 align-items-center d-flex">
+  <div id="nav-bar" class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-10 col-md-4 col-lg-6 align-items-center d-flex">
         <div id="avatar">
           <img src="img/ava1.jpg" alt="ava1">
         </div>
@@ -37,14 +37,26 @@
           <div id="profession">Front-End Developer</div>
         </div>
       </div>
-      <div id="nav-menu" class="d-flex justify-content-around align-items-center col-sm-4">
-        <a href="#">HOME</a>
+      <div id="drop" class="col-2 align-items-center justify-content-center">
+        <div id="x-btn" onclick="openBurger()"></div>
+      </div>
+      <div id="nav-menu" class="d-flex justify-content-around align-items-center col-md-5 col-lg-4">
+        <a href="#top">HOME</a>
         <a href="#work">WORK</a>
         <a href="#about">ABOUT ME</a>
         <a href="ua.html" title="Ukrainian">UA</a>
       </div>
-      <div class="col-sm-2 d-flex justify-content-end align-items-center">
+      <div id="nav-btn-container" class="col-md-3 col-lg-2 d-flex justify-content-end align-items-center">
         <div id="nav-btn" class="btn" onclick="openModal('#contact')">HIRE ME</div>
+      </div>
+    </div>
+    <div id="drop-down">
+      <div onclick="openBurger()"><a href="#top">HOME</a></div>
+      <div onclick="openBurger()"><a href="#work">WORK</a></div>
+      <div onclick="openBurger()"><a href="#about">ABOUT ME</a></div>
+      <div><a href="ua.html" title="Ukrainian">UA</a></div>
+      <div onclick="openBurger()">
+        <div id="drop-down-btn" class="btn" onclick="openModal('#contact')">HIRE ME</div>
       </div>
     </div>
   </div>
@@ -52,8 +64,8 @@
     <div class="row">
       <div id="top-screen" class="col-sm-12 d-flex">
         <img id="top-bg-img" src="img/svg/symbols.svg" alt="symbols">
-        <div class="col-sm-7 d-flex align-items-center">
-          <div id="left-side">
+        <div id="left-side" class="col-sm-7 d-flex align-items-center">
+          <div>
             <div id="text">
               <span>Hello, I'm</span>
               <span>Roman Kot</span>
@@ -68,7 +80,7 @@
             </div>
             <div id="top-btn-block">
               <div id="top-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
-              <div id="top-btn2" class="btn" onclick="openModal('#resume')">SEE MY RESUME</div>
+              <div id="top-btn2" class="btn" onclick="openModal('#resume')">MY RESUME</div>
             </div>
           </div>
         </div>
@@ -85,7 +97,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <!-- <div onclick="openModal('#portfolio','#my-portf')" class="col-lg-4 col-md-6">
+      <!-- <div onclick="openModal('#portfolio','#my-portf')" class="col-sm-6 col-md-6 col-lg-4">
         <div class="project-card">
           <img src="" class="scr-shot" />
           <div>WEB</div>
@@ -93,7 +105,7 @@
           <div>2018</div>
         </div>
       </div> -->
-      <div onclick="openModal('#portfolio','#selez')" class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#selez')" class="col-sm-6 col-md-6 col-lg-4">
         <div class="project-card">
           <img src="img/Selezione.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -101,7 +113,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div onclick="openModal('#portfolio','#base')" class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#base')" class="col-sm-6 col-md-6 col-lg-4">
         <div class="project-card">
           <img src="img/Base_course.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -109,7 +121,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div onclick="openModal('#portfolio','#portf')" class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#portf')" class="col-sm-6 col-md-6 col-lg-4">
         <div class="project-card">
           <img src="img/Profile.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -117,7 +129,7 @@
           <div>2018</div>
         </div>
       </div>
-      <div onclick="openModal('#portfolio','#fex')" class="col-lg-4 col-md-6">
+      <div onclick="openModal('#portfolio','#fex')" class="col-sm-6 col-md-6 col-lg-4">
         <div class="project-card">
           <img src="img/fex_main.jpg" class="scr-shot" />
           <div>WEB</div>
@@ -133,19 +145,21 @@
         <img src="img/svg/bg.svg" alt="bg">
         <img src="img/svg/designer_photo.svg" alt="designer_photo">
       </div>
-      <div class="col-sm-6">
+      <div id="about-col" class="col-sm-6">
         <div id="about-text">
           <span>ABOUT ME</span>
           <span>WHO AM I</span>
           <span>
-            I'm the Front-End Developer from Ukraine.<br/> Mobile First is my strategy.<br/> I'm realy passioned about creating
-            beautiful, intuitive, dynamic and responsive websites that fully coveres all client needs.<br/> So, let's build
+            I'm the Front-End Developer from Ukraine.<br /> Mobile First is my strategy.<br /> I'm realy passioned
+            about creating
+            beautiful, intuitive, dynamic and responsive websites that fully coveres all client needs.<br /> So, let's
+            build
             something spesial.
           </span>
         </div>
         <div id="about-btn-block">
           <div id="about-btn1" class="btn" onclick="openModal('#contact')">HIRE ME</div>
-          <div id="about-btn2" class="btn" onclick="openModal('#resume')">SEE MY RESUME</div>
+          <div id="about-btn2" class="btn" onclick="openModal('#resume')">MY RESUME</div>
         </div>
       </div>
     </div>
@@ -154,15 +168,17 @@
     <div id="feedback" class="col-12 d-flex">
       <img src="img/svg/Symbol 3 – 1.svg" alt="symb">
       <div id="feed-text">
-        The work was done pretty qualified, everything were set up in time and all deadlines were preserved. Especially I would like
-        to point on different helpful advices that developer has been given me regarding website adaptiveness. Thanks for
+        The work was done pretty qualified, everything were set up in time and all deadlines were preserved. Especially
+        I would like
+        to point on different helpful advices that developer has been given me regarding website adaptiveness. Thanks
+        for
         a good cooperation experience.</div>
     </div>
     <div id="feed-avatar">
       <div id="halo">
-        <div id="f-ava-photo"></div>
+        <img src="img/feed-ava.jpg" id="f-ava-photo">
       </div>
-      <div>Sergey F.</div>
+      <div>Serhiy F.</div>
       <div><i>Selezione</i></div>
       <div>
         <i class="fas fa-star"></i>
@@ -175,25 +191,25 @@
   </div>
   <div id="foot" class="d-flex align-items-center">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4 d-flex align-items-center">
+      <div id="foot-row" class="row">
+        <div class="order-4 order-sm-3 order-md-1 offset-3 offset-sm-0 col-auto col-sm-7 col-md-3 col-lg-4 d-flex align-items-center">
           <span>
             &copy;&nbsp;KARMA Design. All rights reserved.
           </span>
         </div>
-        <div class="col-sm-3 d-flex align-items-center">
+        <div class="order-2 order-sm-2 order-md-2 offset-1 offset-sm-2 offset-md-0 col-5 col-sm-4 col-md-3 col-lg-3 d-flex align-items-center">
           <a href="https://www.linkedin.com/in/roman-kot-2aaa54160"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-f"></i></a>
           <a href="https://github.com/rmnkot"><i class="fab fa-github"></i></a>
           <a href="https://twitter.com/rmnkot"><i class="fab fa-twitter"></i></a>
           <a href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
         </div>
-        <div id="foot-menu" class="col-sm-3 d-flex align-items-center justify-content-around">
-          <a href="#">Home</a>
+        <div id="foot-menu" class="order-1 order-sm-1 order-md-3 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-around">
+          <a href="#top">Home</a>
           <a href="#work">Work</a>
           <a href="#about">About Me</a>
         </div>
-        <div class="col-sm-2 d-flex align-items-center justify-content-end">
+        <div class="order-3 order-sm-4 order-md-4 col-5 col-sm-5 col-md-2 col-lg-2 d-flex align-items-center justify-content-end">
           <div id="foot-btn" class="btn" onclick="openModal('#contact')">HIRE ME</div>
         </div>
       </div>
@@ -259,8 +275,10 @@
           <span>WEB | 2018</span>
           <span>Client:</span>
           <span>Selezione</span>
-          <span>This particular project was built on the demand of the client about a simple internet store. So, it was decided
-            to choose free WordPress template with WooCommerce. That template was restyled and recieve different modifications
+          <span>This particular project was built on the demand of the client about a simple internet store. So, it was
+            decided
+            to choose free WordPress template with WooCommerce. That template was restyled and recieve different
+            modifications
             due to client's vision of the final product.</span>
           <span>You can find this website here:</span>
           <a class="site-link" href="http://wordpress-new-com.stackstaging.com">wordpress-new-com.stackstaging.com</a>
@@ -276,7 +294,7 @@
           <span>BASE COURCE</span>
           <span>WEB | 2018</span>
           <span>Client:</span>
-          <span>S.Podlypska</span>
+          <span>S.Pidlypska</span>
           <span>This project was built totaly from scratch either code and design.</span>
           <span>You can find this website here:</span>
           <a class="site-link" href="http://www.testing-proj.cc.ua">www.testing-proj.cc.ua</a>
@@ -292,8 +310,9 @@
           <span>PORTFOLIO</span>
           <span>WEB | 2018</span>
           <span>Client:</span>
-          <span>S.Podlypska</span>
-          <span>This portfolio landing page was built by utilizing and deeply modifying free template. Changes were apply
+          <span>S.Pidlypska</span>
+          <span>This portfolio landing page was built by utilizing and deeply modifying free template. Changes were
+            apply
             only to HTML and CSS.</span>
           <span>You can find this website here:</span>
           <a class="site-link" href="http://rmnkot-com.stackstaging.com/">www.rmnkot-com.stackstaging.com</a>
@@ -332,21 +351,24 @@
             <h4 class="year">2018</h4>
             <h2>Frelancer</h2>
             <h3>My portfolio.</h3>
-            <p>For this purpos I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on the
+            <p>For this purpos I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on
+              the
               top of it. As a design lead, free template was taken but responsiveness was created by myself.</p>
           </div>
           <div>
             <h4 class="year">2018</h4>
             <h2>Frelancer</h2>
             <h3>E-Commerce project.</h3>
-            <p>I've built an internet store of italian products. The client demands were pretty simple, so I've decided to
+            <p>I've built an internet store of italian products. The client demands were pretty simple, so I've decided
+              to
               use WordPress template and modify it.</p>
           </div>
           <div>
             <h4 class="year">2018</h4>
             <h2>Frelancer</h2>
             <h3>Basic project.</h3>
-            <p>This work was made from scratch in pure HTML/CSS with the help of SCSS preprocessor and JavaScript for dynamic
+            <p>This work was made from scratch in pure HTML/CSS with the help of SCSS preprocessor and JavaScript for
+              dynamic
               content.
             </p>
           </div>

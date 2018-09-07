@@ -1,0 +1,319 @@
+
+// LG
+@media screen and (max-width: 1199.98px) {
+    // Work
+
+    .project-card {
+      height: 300px;
+    }
+  
+}
+
+
+// MD
+@media screen and (max-width: 991.98px) {
+  
+  // Top=screen
+
+  #top-screen {
+    height: 360px;
+  }
+
+  #top-bg-img {
+    top: 55px;
+  }
+
+  #top-photo {
+    margin-top: 63px;;
+  }
+  
+  
+
+  #top-btn1, #top-btn2  {
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  
+  #top-btn1 {
+    margin-right: 18px;
+    padding: 9px 20px;
+  }
+  
+  #top-btn2 {
+    padding: 9px 20px;
+  }
+
+  // Work
+
+  .project-card {
+    height: 350px;
+  }
+  
+  
+  // About
+
+  #about {
+    height: 480px;;
+  }
+
+  #about-photo {
+    img:nth-child(1) {
+      width: 250px;
+      height: 250px;
+      top: 121px;
+      left: 30px;
+    }
+  }
+
+  #about-text {
+    margin-top: 0;
+    span {
+      &:nth-child(1) {
+        font-size: 40px;
+      }
+      &:nth-child(2) {
+        font-size: 56px;
+      }
+      &:nth-child(3) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  #about-btn-block {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  
+  #about-btn1, #about-btn2  {
+    font-size: 14px;
+  }
+  
+  #about-btn1 {
+    margin-right: 18px;
+    padding: 9px 20px;
+  }
+  
+  #about-btn2 {
+    padding: 9px 20px;
+  }
+  
+
+  // Testimonial
+
+  #feedback #feed-text {
+    width: 700px;
+  }
+
+}
+
+
+// SM
+@media screen and (max-width: 767.98px) {
+
+  // Nav-bar
+
+  #nav-bar {
+    padding-top: 10px;
+  }
+
+  #avatar {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  }  
+
+  #drop {
+    display: flex !important;
+    #x-btn {
+      height: 2px;
+      width: 30px;
+      background-color: black;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: -8px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        position: absolute;
+        top: 8px;
+      }
+    }
+  }
+
+  #name {
+    font-size: 14px;
+  }
+  
+  #nav-menu, #nav-btn-container {
+    display: none !important;
+  }
+
+  // Top-screen
+
+  #top-screen {
+    height: 340px;
+  }
+  
+  #top-photo {
+    margin-top: 69px;;
+  }
+  
+  #left-side {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #top-btn1, #top-btn2  {
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  
+  #top-btn1 {
+    margin-right: 18px;
+    padding: 9px 20px;
+  }
+  
+  #top-btn2 {
+    padding: 9px 20px;
+  }
+
+    // About
+  
+    #about-photo {
+      img:nth-child(1) {
+        width: 178px;
+        height: 178px;
+        top: 136px;
+        left: 30px;
+      }
+      img:nth-child(2) {
+        top: 45px;
+      }
+    }
+
+    #about-col {
+      padding-left: 0;
+    }
+  
+    #about-text {
+      span {
+        &:nth-child(1) {
+          font-size: 30px;
+        }
+        &:nth-child(2) {
+          font-size: 40px;
+        }
+        &:nth-child(3) {
+          margin-top: 15px;
+        }
+      }
+    }
+  
+    #about-btn-block {
+      margin-left: 20px;
+    }
+    
+    #about-btn1, #about-btn2  {
+      font-size: 13px;
+    }
+    
+    #about-btn1 {
+      margin-right: 12px;
+      padding: 6px 17px;
+    }
+    
+    #about-btn2 {
+      padding: 6px 17px;
+    }
+
+  // Testimonial
+
+  #feedback #feed-text {
+    font-size: 13px;
+  }
+
+  
+  // Work
+
+  .project-card {
+    height: 260px;
+    div:nth-child(2) {
+      font-size: 11px;
+    }
+    div:nth-child(3) {
+      font-size: 14px;
+    }
+    div:nth-child(4) {
+      font-size: 14px;
+    }
+  }
+  
+
+  
+  // Testimonial
+
+  #feedback #feed-text {
+    width: 530px;
+    height: 150px;
+  }
+
+
+  
+  // Footer
+  
+  #foot-row>div {
+    &:nth-child(3), &:nth-child(2) {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    &:nth-child(1), &:nth-child(4) {
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+  }
+  
+}
+
+// Extra small
+@media screen and (max-width: 575.98px) {
+
+    // Work
+
+    .project-card {
+      height: 350px;
+      div:nth-child(2) {
+        font-size: 12px;
+      }
+      div:nth-child(3) {
+        font-size: 16px;
+      }
+      div:nth-child(4) {
+        font-size: 16px;
+      }
+    }
+  
+
+  // Footer
+
+  #foot-row>div {
+    &:nth-child(2), &:nth-child(4) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
