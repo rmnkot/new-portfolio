@@ -1,19 +1,15 @@
-
 // LG
 @media screen and (max-width: 1199.98px) {
-    // Work
+  // Work
 
-    .project-card {
-      height: 300px;
-    }
-  
+
 }
 
 
 // MD
 @media screen and (max-width: 991.98px) {
-  
-  // Top=screen
+
+  // Top-screen
 
   #top-screen {
     height: 360px;
@@ -23,22 +19,17 @@
     top: 55px;
   }
 
-  #top-photo {
-    margin-top: 63px;;
-  }
-  
-  
-
-  #top-btn1, #top-btn2  {
+  #top-btn1,
+  #top-btn2 {
     border-radius: 30px;
     font-size: 15px;
   }
-  
+
   #top-btn1 {
     margin-right: 18px;
     padding: 9px 20px;
   }
-  
+
   #top-btn2 {
     padding: 9px 20px;
   }
@@ -48,32 +39,40 @@
   .project-card {
     height: 350px;
   }
-  
-  
+
+
   // About
 
   #about {
-    height: 480px;;
+    height: 530px;
   }
 
   #about-photo {
     img:nth-child(1) {
-      width: 250px;
-      height: 250px;
-      top: 121px;
+      width: 315px;
+      height: 315px;
+      top: 134px;
       left: 30px;
+    }
+
+    img:nth-child(2) {
+      width: 380px;
+      left: -10px;
     }
   }
 
   #about-text {
     margin-top: 0;
+
     span {
       &:nth-child(1) {
         font-size: 40px;
       }
+
       &:nth-child(2) {
         font-size: 56px;
       }
+
       &:nth-child(3) {
         font-size: 13px;
       }
@@ -81,23 +80,24 @@
   }
 
   #about-btn-block {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px;
   }
-  
-  #about-btn1, #about-btn2  {
+
+  #about-btn1,
+  #about-btn2 {
     font-size: 14px;
   }
-  
+
   #about-btn1 {
     margin-right: 18px;
     padding: 9px 20px;
   }
-  
+
   #about-btn2 {
     padding: 9px 20px;
   }
-  
+
 
   // Testimonial
 
@@ -123,16 +123,18 @@
       height: 50px;
       border-radius: 50%;
     }
-  }  
+  }
 
   #drop {
     display: flex !important;
+
     #x-btn {
       height: 2px;
       width: 30px;
       background-color: black;
       position: relative;
       cursor: pointer;
+
       &::before {
         content: "";
         display: block;
@@ -142,6 +144,7 @@
         position: absolute;
         top: -8px;
       }
+
       &::after {
         content: "";
         display: block;
@@ -157,8 +160,9 @@
   #name {
     font-size: 14px;
   }
-  
-  #nav-menu, #nav-btn-container {
+
+  #nav-menu,
+  #nav-btn-container {
     display: none !important;
   }
 
@@ -166,152 +170,293 @@
 
   #top-screen {
     height: 340px;
+    padding-top: 20px;
   }
-  
-  #top-photo {
-    margin-top: 69px;;
-  }
-  
+
+
   #left-side {
     padding-left: 0;
     padding-right: 0;
   }
 
-  #top-btn1, #top-btn2  {
+
+  #text span {
+
+    &:nth-child(1) {
+      font-size: 25px;
+    }
+
+    &:nth-child(2) {
+      font-size: 30px;
+    }
+
+    &:nth-child(3) {
+      font-size: 15px;
+    }
+  }
+
+  #social {
+    margin-top: 15px;
+  }
+
+  #top-btn1,
+  #top-btn2 {
     border-radius: 30px;
     font-size: 14px;
   }
-  
+
   #top-btn1 {
-    margin-right: 18px;
+    margin-right: 9px;
     padding: 9px 20px;
   }
-  
+
   #top-btn2 {
     padding: 9px 20px;
   }
 
-    // About
-  
-    #about-photo {
-      img:nth-child(1) {
-        width: 178px;
-        height: 178px;
-        top: 136px;
-        left: 30px;
-      }
-      img:nth-child(2) {
-        top: 45px;
-      }
-    }
-
-    #about-col {
-      padding-left: 0;
-    }
-  
-    #about-text {
-      span {
-        &:nth-child(1) {
-          font-size: 30px;
-        }
-        &:nth-child(2) {
-          font-size: 40px;
-        }
-        &:nth-child(3) {
-          margin-top: 15px;
-        }
-      }
-    }
-  
-    #about-btn-block {
-      margin-left: 20px;
-    }
-    
-    #about-btn1, #about-btn2  {
-      font-size: 13px;
-    }
-    
-    #about-btn1 {
-      margin-right: 12px;
-      padding: 6px 17px;
-    }
-    
-    #about-btn2 {
-      padding: 6px 17px;
-    }
-
-  // Testimonial
-
-  #feedback #feed-text {
-    font-size: 13px;
+  #top-photo {
+    margin-top: -75px;
   }
 
-  
+  .top-symbols {
+    top: 40px;
+  }
+
   // Work
 
   .project-card {
     height: 260px;
+
     div:nth-child(2) {
       font-size: 11px;
     }
+
     div:nth-child(3) {
       font-size: 14px;
     }
+
     div:nth-child(4) {
       font-size: 14px;
     }
   }
-  
 
-  
+
+  // About
+
+  #about {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    height: 500px;
+  }
+
+  #about-photo {
+    img:nth-child(1) {
+      width: 250px;
+      height: 250px;
+      top: 134px;
+      left: 22px;
+    }
+
+    img:nth-child(2) {
+      width: 300px;
+      top: 5px;
+    }
+  }
+
+  #about-col {
+    padding-left: 0;
+  }
+
+  #about-text {
+    span {
+      &:nth-child(1) {
+        font-size: 30px;
+      }
+
+      &:nth-child(2) {
+        font-size: 40px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  #about-btn-block {
+    margin-left: 20px;
+  }
+
+  #about-btn1,
+  #about-btn2 {
+    font-size: 13px;
+  }
+
+  #about-btn1 {
+    margin-right: 12px;
+    padding: 6px 17px;
+  }
+
+  #about-btn2 {
+    padding: 6px 17px;
+  }
+
+
   // Testimonial
 
   #feedback #feed-text {
     width: 530px;
     height: 150px;
+    font-size: 13px;
   }
 
 
-  
   // Footer
-  
+
   #foot-row>div {
-    &:nth-child(3), &:nth-child(2) {
+
+    &:nth-child(3),
+    &:nth-child(2) {
       margin-top: 30px;
       margin-bottom: 15px;
     }
-    &:nth-child(1), &:nth-child(4) {
+
+    &:nth-child(1),
+    &:nth-child(4) {
       margin-top: 15px;
       margin-bottom: 30px;
     }
 
   }
-  
+
 }
 
-// Extra small
+
+// ES
 @media screen and (max-width: 575.98px) {
 
-    // Work
+  // Top
 
-    .project-card {
-      height: 350px;
-      div:nth-child(2) {
-        font-size: 12px;
-      }
-      div:nth-child(3) {
-        font-size: 16px;
-      }
-      div:nth-child(4) {
-        font-size: 16px;
-      }
+  #top-screen {
+    flex-direction: column-reverse;
+    height: 145vw;
+    max-height: 620px;
+  }
+
+  #top-photo {
+    margin: 0;
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .top-symbols {
+    display: none;
+  }
+
+  #photo-container {
+    justify-content: center;
+    height: 35%;
+  }
+
+  #left-side {
+    justify-content: center;
+    text-align: center;
+    height: 65%;
+  }
+
+  // Work
+
+  .project-card {
+    height: 350px;
+
+    div:nth-child(2) {
+      font-size: 12px;
     }
-  
+
+    div:nth-child(3) {
+      font-size: 16px;
+    }
+
+    div:nth-child(4) {
+      font-size: 16px;
+    }
+  }
+
+  // About
+
+  #about {
+    height: 900px;
+  }
+
+  #about-photo {
+    height: 400px;
+
+    img:nth-child(1) {
+      left: 49%;
+      transform: translateX(-50%);
+    }
+
+    img:nth-child(2) {
+      left: 48%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #about-col {
+    text-align: center;
+    padding-left: 15px;
+  }
+
+  #about-text {
+    margin-left: 0;
+    // padding: 0 10px;
+
+    span:nth-child(1),
+    span:nth-child(3) {
+      margin-left: 0;
+    }
+  }
+
+  #about-btn-block {
+    margin-left: 0;
+  }
+
+  #about-btn1,
+  #about-btn2 {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+
+  #about-btn1 {
+    margin-right: 25px;
+  }
+
+  // Testimonial
+
+  #feedback {
+    height: 315px;
+
+    #feed-text {
+      width: 300px;
+      height: 207px;
+    }
+  }
+
+  #feed-avatar {
+    margin: -50px auto 0;
+  }
+
+
 
   // Footer
 
   #foot-row>div {
-    &:nth-child(2), &:nth-child(4) {
+    &:nth-child(1) {
+      justify-content: center;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
       margin-top: 15px;
       margin-bottom: 15px;
     }

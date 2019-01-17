@@ -1,0 +1,133 @@
+{
+	"cz": {
+		"thumbnail": {
+			"arg": "#cz",
+			"src": "img/thumb/cz.jpg",
+			"section": "WEB",
+			"title": "TRANSLATOR",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "cz",
+			"src1": "img/proj_img/cz/daler1.jpg",
+			"src2": "img/proj_img/cz/daler2.jpg",
+			"src3": "img/proj_img/cz/daler3.jpg",
+			"title": "TRANSLATOR",
+			"section": "WEB | 2018",
+			"client": "D.Abdurachmanov",
+			"description": "This work has been made from scratch according designers mockup",
+			"link": "http://cz.rmnkot.pp.ua/",
+			"lable": "cz.rmnkot.pp.ua"
+		}
+	},
+
+	"myPortfolio": {
+		"thumbnail": {
+			"arg": "#my-portf",
+			"src": "img/thumb/my.jpg",
+			"section": "WEB",
+			"title": "MY PORTFOLIO",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "my-portf",
+			"src1": "img/proj_img/my/my1.jpg",
+			"src2": "img/proj_img/my/my2.jpg",
+			"src3": "img/proj_img/my/my3.jpg",
+			"title": "MY PORTFOLIO",
+			"section": "WEB | 2018",
+			"client": "Me",
+			"description": "This time I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on the top of it. As a design lead, free template was taken but responsiveness was created by myself.",
+			"link": "http://rmnkot.pp.ua/",
+			"lable": "rmnkot.pp.ua"
+		}
+	},
+
+	"selezione": {
+		"thumbnail": {
+			"arg": "#selez",
+			"src": "img/thumb/Selezione.jpg",
+			"section": "WEB",
+			"title": "SELEZIONE STORE",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "selez",
+			"src1": "img/proj_img/selezione/selez1.jpg",
+			"src2": "img/proj_img/selezione/selez2.jpg",
+			"src3": "img/proj_img/selezione/selez3.jpg",
+			"title": "SELEZIONE STORE",
+			"section": "WEB | 2018",
+			"client": "Selezione",
+			"description": "This particular project was built on the demand of the client about a simple internet store. So, it was decided to choose free WordPress template with WooCommerce.That template was restyled and receive different modifications due to client 's vision of the final product.",
+			"link": "http://selezione.rmnkot.pp.ua/",
+			"lable": "selezione.rmnkot.pp.ua"
+		}
+	},
+
+	"base": {
+		"thumbnail": {
+			"arg": "#base",
+			"src": "img/thumb/Base_course.jpg",
+			"section": "WEB",
+			"title": "BASE COURSE",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "base",
+			"src1": "img/proj_img/base/base1.jpg",
+			"src2": "img/proj_img/base/base2.jpg",
+			"src3": "img/proj_img/base/base3.jpg",
+			"title": "BASE COURCE",
+			"section": "WEB | 2018",
+			"client": "S.Pidlypska",
+			"description": "This project was built totaly from scratch either code and design.",
+			"link": "http://www.base.rmnkot.pp.ua/",
+			"lable": "www.base.rmnkot.pp.ua"
+		}
+	},
+
+	"portfolio": {
+		"thumbnail": {
+			"arg": "#portf",
+			"src": "img/thumb/Profile.jpg",
+			"section": "WEB",
+			"title": "PORTFOLIO",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "portf",
+			"src1": "img/proj_img/profile/portfolio1.jpg",
+			"src2": "img/proj_img/profile/portfolio2.jpg",
+			"src3": "img/proj_img/profile/portfolio3.jpg",
+			"title": "PORTFOLIO",
+			"section": "WEB | 2018",
+			"client": "S.Pidlypska",
+			"description": "This portfolio landing page was built by utilizing and deeply modifying free template. Changes were apply only to HTML and CSS.",
+			"link": "http://www.svet.rmnkot.pp.ua/",
+			"lable": "www.svet.rmnkot.pp.ua"
+		}
+	},
+
+	"fex": {
+		"thumbnail": {
+			"arg": "#fex",
+			"src": "img/thumb/fex_main.jpg",
+			"section": "WEB",
+			"title": "FEX.NET COPY",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "fex",
+			"src1": "img/proj_img/fex/fex.jpg",
+			"src2": "img/proj_img/fex/fex.jpg",
+			"src3": "img/proj_img/fex/fex.jpg",
+			"title": "FEX.NET COPY",
+			"section": "WEB | 2018",
+			"client": "Studying purpose",
+			"description": "Pixel perfect copy of FEX.NET front page.",
+			"link": "http://www.fex.rmnkot.pp.ua/",
+			"lable": "www.fex.rmnkot.pp.ua"
+		}
+	}
+}

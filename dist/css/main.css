@@ -146,8 +146,29 @@ body {
     line-height: 2.1em;
     color: rgba(43, 42, 44, 0.7); }
 
+#photo-container {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.figures {
+  height: 40px;
+  position: absolute;
+  cursor: pointer; }
+  .figures:hover {
+    -webkit-transform: scale(2, 2) !important;
+            transform: scale(2, 2) !important; }
+
 #top-photo {
-  margin-top: 29px; }
+  width: 100%; }
+
+.top-symbols {
+  position: absolute;
+  left: 0;
+  width: 96%;
+  margin-top: -10px; }
 
 #social {
   font-size: 41px;
@@ -187,14 +208,16 @@ body {
 #top-btn-block {
   margin-top: 28px; }
 
-#top-btn1, #top-btn2 {
+#top-btn1,
+#top-btn2 {
   border: 1px solid #6A696B;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 400;
   color: #6A696B;
   letter-spacing: 0.5px; }
-  #top-btn1:hover, #top-btn2:hover {
+  #top-btn1:hover,
+  #top-btn2:hover {
     color: #ffffff; }
 
 #top-btn1 {
@@ -205,8 +228,7 @@ body {
   padding: 13px 30px; }
 
 #work {
-  padding-top: 50px;
-  margin-bottom: 60px; }
+  padding-top: 50px; }
   #work span {
     margin-top: 40px;
     margin-bottom: 30px;
@@ -216,7 +238,6 @@ body {
 
 .project-card {
   max-width: 350px;
-  height: 350px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
@@ -226,6 +247,10 @@ body {
   margin-bottom: 30px;
   -webkit-transition: 0.25s;
   transition: 0.25s; }
+  .project-card::after {
+    content: "";
+    display: block;
+    clear: both; }
   .project-card div:nth-child(2) {
     font-size: 12px;
     font-weight: 400;
@@ -256,8 +281,8 @@ body {
 
 #about {
   height: 665.75px;
-  padding-top: 90px;
-  margin-bottom: 150px; }
+  padding-top: 150px;
+  margin-bottom: 200px; }
 
 #about-photo {
   position: relative; }
@@ -268,7 +293,10 @@ body {
     top: 190px;
     left: 30px; }
   #about-photo img:nth-child(2) {
-    position: absolute; }
+    position: absolute;
+    width: 503px;
+    top: -30px;
+    left: -25px; }
 
 #about-text {
   margin-top: 10px;
@@ -296,14 +324,16 @@ body {
   margin-top: 90px;
   margin-left: 30px; }
 
-#about-btn1, #about-btn2 {
+#about-btn1,
+#about-btn2 {
   border: 1px solid #6A696B;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 400;
   color: #6A696B;
   letter-spacing: 0.5px; }
-  #about-btn1:hover, #about-btn2:hover {
+  #about-btn1:hover,
+  #about-btn2:hover {
     color: #ffffff; }
 
 #about-btn1 {
@@ -428,7 +458,9 @@ body {
     color: #EFEFEF;
     border: 1px solid #EFEFEF; }
 
-#contact, #portfolio, #resume {
+#contact,
+#portfolio,
+#resume {
   display: none;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -471,7 +503,9 @@ body {
     font-size: 14px;
     font-weight: 300;
     padding-bottom: 6px;
-    padding-left: 4px; }
+    padding-left: 4px;
+    text-decoration: none;
+    color: #2B2A2C; }
   #contact-container div:nth-child(2) {
     background-color: #717072;
     position: relative;
@@ -535,6 +569,9 @@ form {
     color: #EFEFEF;
     border: 1px solid #EFEFEF; }
 
+#contact-right img {
+  width: 100%; }
+
 #portfolio-container {
   margin: auto;
   max-width: 1200px;
@@ -554,7 +591,8 @@ form {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     cursor: pointer; }
-  #portfolio-container #fw, #portfolio-container #bw {
+  #portfolio-container #fw,
+  #portfolio-container #bw {
     position: absolute;
     z-index: 1000;
     font-size: 30px;
@@ -570,7 +608,8 @@ form {
     text-align: center;
     -webkit-transition: 0.25s;
     transition: 0.25s; }
-    #portfolio-container #fw:hover, #portfolio-container #bw:hover {
+    #portfolio-container #fw:hover,
+    #portfolio-container #bw:hover {
       opacity: 0.8;
       cursor: pointer;
       background-color: #717072; }
@@ -578,7 +617,8 @@ form {
     left: 750px; }
   #portfolio-container #bw {
     left: 15px; }
-  #portfolio-container #prev-btn, #portfolio-container #next-btn {
+  #portfolio-container #prev-btn,
+  #portfolio-container #next-btn {
     position: absolute;
     bottom: 20px;
     font-size: 14px;
@@ -689,7 +729,8 @@ form {
   text-align: center;
   margin-top: 50px; }
 
-#resume-btn1, #resume-btn2 {
+#resume-btn1,
+#resume-btn2 {
   border: 1px solid #6A696B;
   border-radius: 30px;
   font-size: 12px;
@@ -698,7 +739,8 @@ form {
   letter-spacing: 0.5px;
   padding-top: 9px;
   padding-bottom: 9px; }
-  #resume-btn1:hover, #resume-btn2:hover {
+  #resume-btn1:hover,
+  #resume-btn2:hover {
     color: #ffffff; }
 
 #resume-btn1 {
@@ -772,18 +814,13 @@ table {
   table progress[value]::-webkit-progress-value {
     background-color: #6A696B; }
 
-@media screen and (max-width: 1199.98px) {
-  .project-card {
-    height: 300px; } }
-
 @media screen and (max-width: 991.98px) {
   #top-screen {
     height: 360px; }
   #top-bg-img {
     top: 55px; }
-  #top-photo {
-    margin-top: 63px; }
-  #top-btn1, #top-btn2 {
+  #top-btn1,
+  #top-btn2 {
     border-radius: 30px;
     font-size: 15px; }
   #top-btn1 {
@@ -794,12 +831,15 @@ table {
   .project-card {
     height: 350px; }
   #about {
-    height: 480px; }
+    height: 530px; }
   #about-photo img:nth-child(1) {
-    width: 250px;
-    height: 250px;
-    top: 121px;
+    width: 315px;
+    height: 315px;
+    top: 134px;
     left: 30px; }
+  #about-photo img:nth-child(2) {
+    width: 380px;
+    left: -10px; }
   #about-text {
     margin-top: 0; }
     #about-text span:nth-child(1) {
@@ -809,9 +849,10 @@ table {
     #about-text span:nth-child(3) {
       font-size: 13px; }
   #about-btn-block {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px; }
-  #about-btn1, #about-btn2 {
+  #about-btn1,
+  #about-btn2 {
     font-size: 14px; }
   #about-btn1 {
     margin-right: 18px;
@@ -856,30 +897,56 @@ table {
         top: 8px; }
   #name {
     font-size: 14px; }
-  #nav-menu, #nav-btn-container {
+  #nav-menu,
+  #nav-btn-container {
     display: none !important; }
   #top-screen {
-    height: 340px; }
-  #top-photo {
-    margin-top: 69px; }
+    height: 340px;
+    padding-top: 20px; }
   #left-side {
     padding-left: 0;
     padding-right: 0; }
-  #top-btn1, #top-btn2 {
+  #text span:nth-child(1) {
+    font-size: 25px; }
+  #text span:nth-child(2) {
+    font-size: 30px; }
+  #text span:nth-child(3) {
+    font-size: 15px; }
+  #social {
+    margin-top: 15px; }
+  #top-btn1,
+  #top-btn2 {
     border-radius: 30px;
     font-size: 14px; }
   #top-btn1 {
-    margin-right: 18px;
+    margin-right: 9px;
     padding: 9px 20px; }
   #top-btn2 {
     padding: 9px 20px; }
+  #top-photo {
+    margin-top: -75px; }
+  .top-symbols {
+    top: 40px; }
+  .project-card {
+    height: 260px; }
+    .project-card div:nth-child(2) {
+      font-size: 11px; }
+    .project-card div:nth-child(3) {
+      font-size: 14px; }
+    .project-card div:nth-child(4) {
+      font-size: 14px; }
+  #about {
+    padding-top: 100px;
+    margin-bottom: 100px;
+    height: 500px; }
   #about-photo img:nth-child(1) {
-    width: 178px;
-    height: 178px;
-    top: 136px;
-    left: 30px; }
+    width: 250px;
+    height: 250px;
+    top: 134px;
+    left: 22px; }
   #about-photo img:nth-child(2) {
-    top: 45px; }
+    width: 300px;
+    top: 5px; }
   #about-col {
     padding-left: 0; }
   #about-text span:nth-child(1) {
@@ -890,7 +957,8 @@ table {
     margin-top: 15px; }
   #about-btn-block {
     margin-left: 20px; }
-  #about-btn1, #about-btn2 {
+  #about-btn1,
+  #about-btn2 {
     font-size: 13px; }
   #about-btn1 {
     margin-right: 12px;
@@ -898,18 +966,9 @@ table {
   #about-btn2 {
     padding: 6px 17px; }
   #feedback #feed-text {
-    font-size: 13px; }
-  .project-card {
-    height: 260px; }
-    .project-card div:nth-child(2) {
-      font-size: 11px; }
-    .project-card div:nth-child(3) {
-      font-size: 14px; }
-    .project-card div:nth-child(4) {
-      font-size: 14px; }
-  #feedback #feed-text {
     width: 530px;
-    height: 150px; }
+    height: 150px;
+    font-size: 13px; }
   #foot-row > div:nth-child(3), #foot-row > div:nth-child(2) {
     margin-top: 30px;
     margin-bottom: 15px; }
@@ -918,6 +977,30 @@ table {
     margin-bottom: 30px; } }
 
 @media screen and (max-width: 575.98px) {
+  #top-screen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 145vw;
+    max-height: 620px; }
+  #top-photo {
+    margin: 0;
+    width: 90%;
+    max-width: 360px; }
+  .top-symbols {
+    display: none; }
+  #photo-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 35%; }
+  #left-side {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    height: 65%; }
   .project-card {
     height: 350px; }
     .project-card div:nth-child(2) {
@@ -926,6 +1009,45 @@ table {
       font-size: 16px; }
     .project-card div:nth-child(4) {
       font-size: 16px; }
+  #about {
+    height: 900px; }
+  #about-photo {
+    height: 400px; }
+    #about-photo img:nth-child(1) {
+      left: 49%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    #about-photo img:nth-child(2) {
+      left: 48%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  #about-col {
+    text-align: center;
+    padding-left: 15px; }
+  #about-text {
+    margin-left: 0; }
+    #about-text span:nth-child(1),
+    #about-text span:nth-child(3) {
+      margin-left: 0; }
+  #about-btn-block {
+    margin-left: 0; }
+  #about-btn1,
+  #about-btn2 {
+    font-size: 14px;
+    padding: 9px 20px; }
+  #about-btn1 {
+    margin-right: 25px; }
+  #feedback {
+    height: 315px; }
+    #feedback #feed-text {
+      width: 300px;
+      height: 207px; }
+  #feed-avatar {
+    margin: -50px auto 0; }
+  #foot-row > div:nth-child(1) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   #foot-row > div:nth-child(2), #foot-row > div:nth-child(4) {
     margin-top: 15px;
     margin-bottom: 15px; } }
