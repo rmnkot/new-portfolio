@@ -314,7 +314,7 @@ function createModal(obj) {
     <div class="col-4 portfolio-right">
       <span>${obj[x].modal.title}</span>
       <span>${obj[x].modal.section}</span>
-      <span>Client:</span>
+      <span>${obj[x].modal.cl_tag}</span>
       <span>${obj[x].modal.client}</span>
       <span>${obj[x].modal.description}</span>
       <span>You can find this website here:</span>

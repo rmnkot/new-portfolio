@@ -10,7 +10,7 @@
 
 body {
   padding-top: 18px;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 // Button hover effect
@@ -619,7 +619,7 @@ body {
 #contact-container {
   margin: auto;
   max-width: 900px;
-  height: 676px;
+  height: 675px;
   background-color: #fff;
 
   div:nth-child(1) {
@@ -732,6 +732,11 @@ form {
 #contact-right img {
   width: 100%;
 }
+
+.close-btn {
+  display: none;
+}
+
 
 // Portfolio modal
 

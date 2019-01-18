@@ -1,0 +1,139 @@
+{
+	"cz": {
+		"thumbnail": {
+			"arg": "#cz",
+			"src": "img/thumb/cz.jpg",
+			"section": "WEB",
+			"title": "ПЕРЕКЛАДАЧ",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "cz",
+			"src1": "img/proj_img/cz/daler1.jpg",
+			"src2": "img/proj_img/cz/daler2.jpg",
+			"src3": "img/proj_img/cz/daler3.jpg",
+			"title": "ПЕРЕКЛАДАЧ",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Д.Абдурахманов",
+			"description": "Ця робота була виконана у відповідності до запропонованого дизайну.",
+			"link": "http://cz.rmnkot.pp.ua/",
+			"lable": "cz.rmnkot.pp.ua"
+		}
+	},
+
+	"myPortfolio": {
+		"thumbnail": {
+			"arg": "#my-portf",
+			"src": "img/thumb/my.jpg",
+			"section": "WEB",
+			"title": "МОЄ ПОРТФОЛІО",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "my-portf",
+			"src1": "img/proj_img/my/my1.jpg",
+			"src2": "img/proj_img/my/my2.jpg",
+			"src3": "img/proj_img/my/my3.jpg",
+			"title": "МОЄ ПОРТФОЛІО",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Я",
+			"description": "Для створення свого потфоліо я вирішив скористатися сіткою Bootstrap та надбудувати на ній свої стилі та JavaScript. Щодо дизайну, то було взято безкоштовний шаблон, хоча адаптивність була створена самостійно.",
+			"link": "http://rmnkot.pp.ua/",
+			"lable": "rmnkot.pp.ua"
+		}
+	},
+
+	"selezione": {
+		"thumbnail": {
+			"arg": "#selez",
+			"src": "img/thumb/Selezione.jpg",
+			"section": "WEB",
+			"title": "SELEZIONE МАГАЗИН",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "selez",
+			"src1": "img/proj_img/selezione/selez1.jpg",
+			"src2": "img/proj_img/selezione/selez2.jpg",
+			"src3": "img/proj_img/selezione/selez3.jpg",
+			"title": "SELEZIONE МАГАЗИН",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Selezione",
+			"description": "Цей проект був створений з урахуванням побажань замовника про достатньо простий за функціоналом інтернет магазин. Тому вирішено було скористатися безкоштовним шаблоном для WordPress з використанням WooCommerce. Шаблон було стилізовано по-новому, застосували додаткові плагіни та деякі модифікації на рівні коду, щоб відповідати баченню клієнта про кінцевий продукт.",
+			"link": "http://selezione.rmnkot.pp.ua/",
+			"lable": "selezione.rmnkot.pp.ua"
+		}
+	},
+
+	"base": {
+		"thumbnail": {
+			"arg": "#base",
+			"src": "img/thumb/Base_course.jpg",
+			"section": "WEB",
+			"title": "БАЗОВИЙ КУРС",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "base",
+			"src1": "img/proj_img/base/base1.jpg",
+			"src2": "img/proj_img/base/base2.jpg",
+			"src3": "img/proj_img/base/base3.jpg",
+			"title": "БАЗОВИЙ КУРС",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "С.Підлипська",
+			"description": "Цей проект було створено з чистого аркуша. Дизайн веб-сайту розроблявся колегою-дизайнером, а за його реалізацію відповідав я. CSS стилі писалися за допомогою SCSS препроцесора, а JavaScript був використаний для надання динаміки елементам сторінки.",
+			"link": "http://www.base.rmnkot.pp.ua/",
+			"lable": "www.base.rmnkot.pp.ua"
+		}
+	},
+
+	"portfolio": {
+		"thumbnail": {
+			"arg": "#portf",
+			"src": "img/thumb/Profile.jpg",
+			"section": "WEB",
+			"title": "ПОРТФОЛІО",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "portf",
+			"src1": "img/proj_img/profile/portfolio1.jpg",
+			"src2": "img/proj_img/profile/portfolio2.jpg",
+			"src3": "img/proj_img/profile/portfolio3.jpg",
+			"title": "ПОРТФОЛІО",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "С.Підлипська",
+			"description": "Ця робота була виконана з використанням безкоштовного шаблону та його глибокої модифікації. Зміни застосовувалися тільки до HTML та CSS.",
+			"link": "http://www.svet.rmnkot.pp.ua/",
+			"lable": "www.svet.rmnkot.pp.ua"
+		}
+	},
+
+	"fex": {
+		"thumbnail": {
+			"arg": "#fex",
+			"src": "img/thumb/fex_main.jpg",
+			"section": "WEB",
+			"title": "FEX.NET КОПІЯ",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "fex",
+			"src1": "img/proj_img/fex/fex.jpg",
+			"src2": "img/proj_img/fex/fex.jpg",
+			"src3": "img/proj_img/fex/fex.jpg",
+			"title": "FEX.NET КОПІЯ",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Навчання",
+			"description": "Точна копія головної сторінки ресурсу FEX.NET.",
+			"link": "http://www.fex.rmnkot.pp.ua/",
+			"lable": "www.fex.rmnkot.pp.ua"
+		}
+	}
+}

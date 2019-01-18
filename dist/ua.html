@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Роман Кот. Front-End Розробник">
+  <meta name="keywords" content="Роман Кот. Front-End Розробник. Веб розробка, програмування">
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -31,7 +34,7 @@
     <div class="row d-flex align-items-center">
       <div class="col-10 col-md-4 col-lg-6 align-items-center d-flex">
         <div id="avatar">
-          <img src="img/ava1.jpg" alt="ava1">
+          <img src="img/photo/ava.jpg" alt="ava1">
         </div>
         <div id="person">
           <div id="name">Роман Кот</div>
@@ -45,7 +48,7 @@
         <a href="#top">ТОП</a>
         <a href="#work">РОБОТИ</a>
         <a href="#about">ПРО МЕНЕ</a>
-        <a href="index.html" title="English">EN</a>
+        <a href="index.html" title="Англійська">EN</a>
       </div>
       <div id="nav-btn-container" class="col-md-3 col-lg-2 d-flex justify-content-end align-items-center">
         <div id="nav-btn" class="btn" onclick="openModal('#contact')">НАЙНЯТИ</div>
@@ -55,17 +58,16 @@
       <div onclick="openBurger()"><a href="#top">ТОП</a></div>
       <div onclick="openBurger()"><a href="#work">РОБОТИ</a></div>
       <div onclick="openBurger()"><a href="#about">ПРО МЕНЕ</a></div>
-      <div><a href="index.html" title="Ukrainian">EN</a></div>
+      <div><a href="index.html" title="Англійська">EN</a></div>
       <div onclick="openBurger()">
         <div id="drop-down-btn" class="btn" onclick="openModal('#contact')">НАЙНЯТИ</div>
       </div>
     </div>
   </div>
-  <div id="top" class="container">
+  <header id="top" class="container">
     <div class="row">
       <div id="top-screen" class="col-sm-12 d-flex">
-        <img id="top-bg-img" src="img/svg/symbols.svg" alt="symbols">
-        <div id="left-side" class="col-sm-7 d-flex align-items-center">
+        <div id="left-side" class="col-sm-6 d-flex align-items-center">
           <div>
             <div id="text">
               <span>Привіт, я</span>
@@ -73,78 +75,40 @@
               <span>"Front-End" Розробник</span>
             </div>
             <div id="social">
-              <a href="https://www.linkedin.com/in/roman-kot-2aaa54160"><i class="fab fa-linkedin"></i></a>
-              <a href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-square"></i></a>
-              <a href="https://github.com/rmnkot"><i class="fab fa-github-square"></i></a>
-              <a href="https://twitter.com/rmnkot"><i class="fab fa-twitter-square"></i></a>
-              <a href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
+              <a title="LinkedIn" href="https://www.linkedin.com/in/roman-kot-2aaa54160"><i class="fab fa-linkedin"></i></a>
+              <a title="Facebook" href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-square"></i></a>
+              <a title="GitHub" href="https://github.com/rmnkot"><i class="fab fa-github-square"></i></a>
+              <a title="Twitter" href="https://twitter.com/rmnkot"><i class="fab fa-twitter-square"></i></a>
+              <a title="Skype" href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
             </div>
             <div id="top-btn-block">
               <div id="top-btn1" class="btn" onclick="openModal('#contact')">НАЙНЯТИ</div>
-              <div id="top-btn2" class="btn" onclick="openModal('#resume')">МОЄ РЕЗЮМЕ</div>
+              <div id="top-btn2" class="btn" onclick="openModal('#resume')">РЕЗЮМЕ</div>
             </div>
           </div>
         </div>
-        <div id="photo-container" class="col-sm-5">
-          <img id="top-photo" src="img/svg/photo.svg" alt="photo">
+        <div id="photo-container" class="col-sm-6 d-flex">
+          <img id="top-photo" src="img/code.gif" alt="photo">
+          <img src="img/svg/top_symbols.svg" alt="bg" class="top-symbols">
         </div>
       </div>
     </div>
-  </div>
-  <div id="work" class="container">
+  </header>
+  <section id="work" class="container">
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
         <span>Мої Проекти</span>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <!-- <div onclick="openModal('#portfolio','#my-portf')" class="col-sm-6 col-md-6 col-lg-4">
-        <div class="project-card">
-          <img src="" class="scr-shot" />
-          <div>WEB</div>
-          <div>МОЄ ПОРТФОЛІО</div>
-          <div>2018</div>
-        </div>
-      </div> -->
-      <div onclick="openModal('#portfolio','#selez')" class="col-sm-6 col-md-6 col-lg-4">
-        <div class="project-card">
-          <img src="img/Selezione.jpg" class="scr-shot" />
-          <div>WEB</div>
-          <div>SELEZIONE МАГАЗИН</div>
-          <div>2018</div>
-        </div>
-      </div>
-      <div onclick="openModal('#portfolio','#base')" class="col-sm-6 col-md-6 col-lg-4">
-        <div class="project-card">
-          <img src="img/Base_course.jpg" class="scr-shot" />
-          <div>WEB</div>
-          <div>БАЗОВИЙ КУРС</div>
-          <div>2018</div>
-        </div>
-      </div>
-      <div onclick="openModal('#portfolio','#portf')" class="col-sm-6 col-md-6 col-lg-4">
-        <div class="project-card">
-          <img src="img/Profile.jpg" class="scr-shot" />
-          <div>WEB</div>
-          <div>ПОРТФОЛІО</div>
-          <div>2018</div>
-        </div>
-      </div>
-      <div onclick="openModal('#portfolio','#fex')" class="col-sm-6 col-md-6 col-lg-4">
-        <div class="project-card">
-          <img src="img/fex_main.jpg" class="scr-shot" />
-          <div>WEB</div>
-          <div>FEX.NET КОПІЯ</div>
-          <div>2018</div>
-        </div>
-      </div>
+    <div id="thumb-container" class="row justify-content-center">
+      <!-- dynamic js content -->
     </div>
-  </div>
-  <div class="container">
+  </section>
+  <section class="container">
     <div id="about" class="row">
       <div id="about-photo" class="col-sm-6">
-        <img src="img/svg/bg.svg" alt="bg">
-        <img src="img/svg/designer_photo.svg" alt="designer_photo">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/svg/square_bg.svg" alt="bg">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/photo/2Photo2.png" alt="designer_photo">
       </div>
       <div id="about-col" class="col-sm-6">
         <div id="about-text">
@@ -164,10 +128,11 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="testimonial" class="row">
+  </section>
+  <section id="testimonial" class="row">
     <div id="feedback" class="col-12 d-flex">
-      <img src="img/svg/Symbol 3 – 1.svg" alt="symb">
+      <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/svg/testimonial_symbol.svg"
+        alt="symb">
       <div id="feed-text">
         Робота виявилась достатньо кваліфіковано виконана, все було створено вчасно та з дотриманням термінів. Особливо
         я хотів би
@@ -176,7 +141,8 @@
     </div>
     <div id="feed-avatar">
       <div id="halo">
-        <img src="img/feed-ava.jpg" id="f-ava-photo">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/photo/feed-ava.jpg" id="f-ava-photo"
+          alt="feed-ava">
       </div>
       <div>Сергій Ф.</div>
       <div><i>Selezione</i></div>
@@ -185,24 +151,24 @@
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
-        <i class="fas fa-star-half"></i>
+        <i class="fas fa-star-half-alt"></i>
       </div>
     </div>
-  </div>
-  <div id="foot" class="d-flex align-items-center">
+  </section>
+  <footer id="foot" class="d-flex align-items-center">
     <div class="container">
       <div id="foot-row" class="row">
-        <div class="order-4 order-sm-3 order-md-1 offset-3 offset-sm-0 col-auto col-sm-7 col-md-3 col-lg-4 d-flex align-items-center">
+        <div class="order-4 order-sm-3 order-md-1 offset-0 offset-sm-0 col-12 col-sm-7 col-md-3 col-lg-4 d-flex align-items-center">
           <span>
             &copy;&nbsp;KARMA Design. All rights reserved.
           </span>
         </div>
         <div class="order-2 order-sm-2 order-md-2 offset-1 offset-sm-2 offset-md-0 col-5 col-sm-4 col-md-3 col-lg-3 d-flex align-items-center">
-          <a href="https://www.linkedin.com/in/roman-kot-2aaa54160"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://github.com/rmnkot"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/rmnkot"><i class="fab fa-twitter"></i></a>
-          <a href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
+          <a title="LinkedIn" href="https://www.linkedin.com/in/roman-kot-2aaa54160"><i class="fab fa-linkedin-in"></i></a>
+          <a title="Facebook" href="https://www.facebook.com/roman.kot.5"><i class="fab fa-facebook-f"></i></a>
+          <a title="GitHub" href="https://github.com/rmnkot"><i class="fab fa-github"></i></a>
+          <a title="Twitter" href="https://twitter.com/rmnkot"><i class="fab fa-twitter"></i></a>
+          <a title="Skype" href="skype:egzgumazija1?chat"><i class="fab fa-skype"></i></a>
         </div>
         <div id="foot-menu" class="order-1 order-sm-1 order-md-3 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-around">
           <a href="#top">Топ</a>
@@ -214,17 +180,17 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
   <div id="contact">
     <div id="contact-container" class="row">
-      <div id="contact-left" class="col-6">
+      <div id="contact-left" class="col-12 col-sm-6">
         <span>ПОГОВОРИМО!</span>
         <span>ПОДЗВОНІТЬ АБО НАПИШІТЬ МЕНІ</span>
         <div><i class="fas fa-phone-square"></i>
-          <a href="tel:+38 (097) 914-45-13" class="tel-mail">+38 (097) 914-45-13</a>
+          <a href="tel:+38(097)914-45-13" class="tel-mail">+38 (097) 914-45-13</a>
         </div>
         <div><i class="fas fa-envelope"></i>
-          <a href="mailto: rmnkot@gmail.com" class="tel-mail">rmnkot@gmail.com</a>
+          <a href="mailto:rmnkot@gmail.com" class="tel-mail">rmnkot@gmail.com</a>
         </div>
         <form method="POST" action="https://formspree.io/rmnkot@gmail.com">
           Ваш e-mail<br>
@@ -233,9 +199,10 @@
           <textarea type="text" name="request" id="request" placeholder="Напишіть ваш запит..."></textarea>
         </form>
         <div id="contact-btn" class="btn">ВІДПРАВИТИ</div>
+        <i onclick="closeModal()" class="close-btn fas fa-times-circle"></i>
       </div>
-      <div class="col-6">
-        <img src="img/contact_photo.jpg" alt="contact_photo">
+      <div id="contact-right" class="col-6">
+        <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/photo/PhotoForm.jpg" alt="contact_photo">
         <i onclick="closeModal()" class="fas fa-times-circle"></i>
       </div>
     </div>
@@ -247,99 +214,7 @@
       <div id="bw" onclick="bw()"><i class="fas fa-chevron-left"></i></div>
       <div id="prev-btn" class="btn" onclick="prev()">&#10094;&nbsp;&nbsp;ПОПЕРЕДНІЙ</div>
       <div id="next-btn" class="btn" onclick="next()">НАСТУПНИЙ&nbsp;&nbsp;&#10095;</div>
-      <!-- <div id="my-portf" class="row portfolio-content">
-          <div class="col-8 portfolio-left">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-          </div>
-          <div class="col-4 portfolio-right">
-            <span>МОЄ ПОРТФОЛІО</span>
-            <span>WEB | 2018</span>
-            <span>Замовник:</span>
-            <span>Я</span>
-            <span>Для створення свого потфоліо я вирішив скористатися сіткою Bootstrap та надбудувати на ній свої стилі та JavaScript.
-              Щодо дизайну, то було взято безкоштовний шаблон, хоча адаптивність була створена самостійно.</span>
-            <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
-            <a class="site-link" target="_blank" href="">.....</a>
-          </div>
-        </div> -->
-      <div id="selez" class="row portfolio-content">
-        <div class="col-8 portfolio-left">
-          <img src="img/selez1.jpg" alt="">
-          <img src="img/selez2.jpg" alt="">
-          <img src="img/selez3.jpg" alt="">
-        </div>
-        <div class="col-4 portfolio-right">
-          <span>SELEZIONE МАГАЗИН</span>
-          <span>WEB | 2018</span>
-          <span>Замовник:</span>
-          <span>Selezione</span>
-          <span>Цей проект був створений з урахуванням побажань замовника про достатньо простий за функціоналом
-            інтернет
-            магазин. Тому вирішено було скористатися безкоштовним шаблоном для WordPress з використанням WooCommerce.
-            Шаблон
-            було стилізовано по-новому, застосували додаткові плагіни та деякі модифікації на рівні коду, щоб
-            відповідати
-            баченню клієнта про кінцевий продукт.</span>
-          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
-          <a class="site-link" target="_blank" href="http://wordpress-new-com.stackstaging.com">wordpress-new-com.stackstaging.com</a>
-        </div>
-      </div>
-      <div id="base" class="row portfolio-content">
-        <div class="col-8 portfolio-left">
-          <img src="img/base1.jpg" alt="">
-          <img src="img/base2.jpg" alt="">
-          <img src="img/base3.jpg" alt="">
-        </div>
-        <div class="col-4 portfolio-right">
-          <span>БАЗОВИЙ КУРС</span>
-          <span>WEB | 2018</span>
-          <span>Замовник:</span>
-          <span>С.Підлипська</span>
-          <span>Цей проект було створено з чистого аркуша. Дизайн веб-сайту розроблявся колегою-дизайнером, а за його
-            реалізацію
-            відповідав я. CSS стилі писалися за допомогою SCSS препроцесора, а JavaScript був використаний для надання
-            динаміки
-            елементам сторінки.</span>
-          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
-          <a class="site-link" target="_blank" href="http://www.base.rmnkot.pp.ua/">www.base.rmnkot.pp.ua</a>
-        </div>
-      </div>
-      <div id="portf" class="row portfolio-content">
-        <div class="col-8 portfolio-left">
-          <img src="img/portfolio1.jpg" alt="portfolio1">
-          <img src="img/portfolio2.jpg" alt="">
-          <img src="img/portfolio3.jpg" alt="">
-        </div>
-        <div class="col-4 portfolio-right">
-          <span>ПОРТФОЛІО</span>
-          <span>WEB | 2018</span>
-          <span>Замовник:</span>
-          <span>С.Підлипська</span>
-          <span>Ця робота була виконана з використанням безкоштовного шаблону та його глибокої модифікації. Зміни
-            застосовувалися
-            тільки до HTML та CSS.</span>
-          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
-          <a class="site-link" target="_blank" href="http://www.svet.rmnkot.pp.ua/">www.svet.rmnkot.pp.ua</a>
-        </div>
-      </div>
-      <div id="fex" class="row portfolio-content">
-        <div class="col-8 portfolio-left">
-          <img src="img/fex.jpg" alt="fex">
-          <img src="img/fex.jpg" alt="">
-          <img src="img/fex.jpg" alt="">
-        </div>
-        <div class="col-4 portfolio-right">
-          <span>FEX.NET КОПІЯ</span>
-          <span>WEB | 2018</span>
-          <span>Замовник:</span>
-          <span>Навчання</span>
-          <span>Точна копія головної сторінки ресурсу FEX.NET.</span>
-          <span>Ви можете відвідати цей веб-сайт за посиланням:</span>
-          <a class="site-link" target="_blank" href="http://www.fex.rmnkot.pp.ua/">www.fex.rmnkot.pp.ua</a>
-        </div>
-      </div>
+      <!-- dynamic js content -->
     </div>
   </div>
   <div id="resume">
@@ -416,31 +291,31 @@
             </colgroup>
             <tr>
               <td>HTML</td>
-              <td><progress value="81" max="100"></progress></td>
+              <td><progress value="91" max="100"></progress></td>
             </tr>
             <tr>
               <td>CSS</td>
-              <td><progress value="74" max="100"></progress></td>
+              <td><progress value="86" max="100"></progress></td>
             </tr>
             <tr>
               <td>SCSS</td>
-              <td><progress value="56" max="100"></progress></td>
+              <td><progress value="75" max="100"></progress></td>
             </tr>
             <tr>
               <td>Bootstrap</td>
-              <td><progress value="33" max="100"></progress></td>
+              <td><progress value="44" max="100"></progress></td>
             </tr>
             <tr>
               <td>JavaScript</td>
-              <td><progress value="50" max="100"></progress></td>
+              <td><progress value="63" max="100"></progress></td>
             </tr>
             <tr>
               <td>jQuery</td>
-              <td><progress value="37" max="100"></progress></td>
+              <td><progress value="42" max="100"></progress></td>
             </tr>
             <tr>
               <td>WordPress</td>
-              <td><progress value="28" max="100"></progress></td>
+              <td><progress value="36" max="100"></progress></td>
             </tr>
             <tr>
               <td>PHP</td>
@@ -457,19 +332,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Custom JavaScript -->
-  <script src="js/app.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -480,6 +342,30 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/app.js"></script>
+
+  <script>
+    // GET request to json file
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+
+      if (this.readyState == 4 && this.status == 200) {
+        const myObj = JSON.parse(this.responseText);
+
+        for (x in myObj) {
+          createThumbnail(myObj);
+          createModal(myObj);
+        }
+
+        initDefer();
+      }
+    };
+    xmlhttp.open("GET", "projects_ua.json", true);
+    xmlhttp.send();
+  </script>
+
 </body>
 
 </html>
