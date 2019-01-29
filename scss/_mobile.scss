@@ -113,6 +113,10 @@
     height: 548px;
 
     div:nth-child(1) {
+      span:nth-child(1) {
+        font-size: 36px;
+      }
+
       span:nth-child(2) {
         padding-bottom: 20px;
       }
@@ -375,7 +379,7 @@
 
     div:nth-child(1) {
       span:nth-child(1) {
-        font-size: 34px;
+        font-size: 29px;
         padding-top: 10px;
       }
 
@@ -410,6 +414,7 @@
     height: 38px;
     padding: 10px 40px;
     font-size: 14px;
+    margin-right: 3px;
   }
 
 

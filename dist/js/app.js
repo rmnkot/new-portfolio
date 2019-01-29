@@ -323,3 +323,31 @@ function createModal(obj) {
   `
   modalContainer.appendChild(el);
 }
+
+// Form handler
+document.getElementById('contact-form').addEventListener('submit', send);
+
+function send(e) {
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  const email = form.adress.value;
+  const text = form.request.value;
+
+  fetch('contact.php', {
+      method: "POST",
+      // right data format for form data sending
+      body: new URLSearchParams(`email=${email}&text=${text}`)
+    })
+    .then(response => response)
+    .then((res) => {
+      if (res.ok) {
+        form.reset();
+        closeModal();
+
+      } else {
+        throw new Error();
+      }
+    })
+    .catch(() => alert('SOMETHING WENT WRONG...'));
+};

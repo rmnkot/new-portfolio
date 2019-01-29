@@ -722,10 +722,12 @@ form {
   float: right;
   clear: both;
   margin-right: 25px;
+  background-color: transparent;
 
   &:hover {
     color: #EFEFEF;
     border: 1px solid #EFEFEF;
+    background: #2B2A2C;
   }
 }
 

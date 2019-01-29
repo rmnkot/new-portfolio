@@ -565,10 +565,12 @@ form {
   padding: 17px 60px;
   float: right;
   clear: both;
-  margin-right: 25px; }
+  margin-right: 25px;
+  background-color: transparent; }
   #contact-btn:hover {
     color: #EFEFEF;
-    border: 1px solid #EFEFEF; }
+    border: 1px solid #EFEFEF;
+    background: #2B2A2C; }
 
 #contact-right img {
   width: 100%; }
@@ -868,6 +870,8 @@ table {
   #contact-container {
     width: 730px;
     height: 548px; }
+    #contact-container div:nth-child(1) span:nth-child(1) {
+      font-size: 36px; }
     #contact-container div:nth-child(1) span:nth-child(2) {
       padding-bottom: 20px; }
   form {
@@ -1002,7 +1006,7 @@ table {
     width: 550px;
     height: 413px; }
     #contact-container div:nth-child(1) span:nth-child(1) {
-      font-size: 34px;
+      font-size: 29px;
       padding-top: 10px; }
     #contact-container div:nth-child(1) span:nth-child(2) {
       padding-bottom: 13px; }
@@ -1024,7 +1028,8 @@ table {
   #contact-btn {
     height: 38px;
     padding: 10px 40px;
-    font-size: 14px; } }
+    font-size: 14px;
+    margin-right: 3px; } }
 
 @media screen and (max-width: 575.98px) {
   #top-screen {
