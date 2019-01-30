@@ -17,6 +17,7 @@
 			"cl_tag": "Клієнт:",
 			"client": "Д.Абдурахманов",
 			"description": "Ця робота була виконана у відповідності до запропонованого дизайну.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
 			"link": "http://cz.rmnkot.pp.ua/",
 			"lable": "cz.rmnkot.pp.ua"
 		}
@@ -40,6 +41,7 @@
 			"cl_tag": "Клієнт:",
 			"client": "Я",
 			"description": "Для створення свого потфоліо я вирішив скористатися сіткою Bootstrap та надбудувати на ній свої стилі та JavaScript. Щодо дизайну, то було взято безкоштовний шаблон, хоча адаптивність була створена самостійно.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
 			"link": "http://rmnkot.pp.ua/",
 			"lable": "rmnkot.pp.ua"
 		}
@@ -63,6 +65,7 @@
 			"cl_tag": "Клієнт:",
 			"client": "Selezione",
 			"description": "Цей проект був створений з урахуванням побажань замовника про достатньо простий за функціоналом інтернет магазин. Тому вирішено було скористатися безкоштовним шаблоном для WordPress з використанням WooCommerce. Шаблон було стилізовано по-новому, застосували додаткові плагіни та деякі модифікації на рівні коду, щоб відповідати баченню клієнта про кінцевий продукт.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
 			"link": "http://selezione.rmnkot.pp.ua/",
 			"lable": "selezione.rmnkot.pp.ua"
 		}
@@ -86,6 +89,7 @@
 			"cl_tag": "Клієнт:",
 			"client": "С.Підлипська",
 			"description": "Цей проект було створено з чистого аркуша. Дизайн веб-сайту розроблявся колегою-дизайнером, а за його реалізацію відповідав я. CSS стилі писалися за допомогою SCSS препроцесора, а JavaScript був використаний для надання динаміки елементам сторінки.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
 			"link": "http://www.base.rmnkot.pp.ua/",
 			"lable": "www.base.rmnkot.pp.ua"
 		}
@@ -109,31 +113,105 @@
 			"cl_tag": "Клієнт:",
 			"client": "С.Підлипська",
 			"description": "Ця робота була виконана з використанням безкоштовного шаблону та його глибокої модифікації. Зміни застосовувалися тільки до HTML та CSS.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
 			"link": "http://www.svet.rmnkot.pp.ua/",
 			"lable": "www.svet.rmnkot.pp.ua"
 		}
 	},
 
-	"fex": {
+	"game": {
 		"thumbnail": {
-			"arg": "#fex",
-			"src": "img/thumb/fex_main.jpg",
-			"section": "WEB",
-			"title": "FEX.NET КОПІЯ",
+			"arg": "#game",
+			"src": "img/thumb/game.jpg",
+			"section": "ІГРИ",
+			"title": "ПРОСТА ГРА",
 			"year": "2018"
 		},
 		"modal": {
-			"id": "fex",
-			"src1": "img/proj_img/fex/fex.jpg",
-			"src2": "img/proj_img/fex/fex.jpg",
-			"src3": "img/proj_img/fex/fex.jpg",
-			"title": "FEX.NET КОПІЯ",
+			"id": "game",
+			"src1": "img/proj_img/game/game1.jpg",
+			"src2": "img/proj_img/game/game2.jpg",
+			"src3": "img/proj_img/game/game3.jpg",
+			"title": "ПРОСТА ГРА",
+			"section": "ІГРИ | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Навчання",
+			"description": "Проста гра на JavaScript з використанням CSS Grid для генерації ігрового поля. Протестовано в Google Chrome.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
+			"link": "http://www.game.rmnkot.pp.ua/",
+			"lable": "www.game.rmnkot.pp.ua"
+		}
+	},
+
+	"bagdum": {
+		"thumbnail": {
+			"arg": "#bagdum",
+			"src": "img/thumb/bagdum.jpg",
+			"section": "WEB",
+			"title": "БАГДУМ",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "bagdum",
+			"src1": "img/proj_img/bagdum/bagdum1.jpg",
+			"src2": "img/proj_img/bagdum/bagdum2.jpg",
+			"src3": "img/proj_img/bagdum/bagdum3.jpg",
+			"title": "БАГДУМ",
 			"section": "WEB | 2018",
 			"cl_tag": "Клієнт:",
 			"client": "Навчання",
-			"description": "Точна копія головної сторінки ресурсу FEX.NET.",
-			"link": "http://www.fex.rmnkot.pp.ua/",
-			"lable": "www.fex.rmnkot.pp.ua"
+			"description": "Цей сайт був зроблений з використанням \"smart-grid\" - Flexbox сітки на SCSS міксинах. Основними завданнями було відпрацювання нової структури проекту та адаптивності.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
+			"link": "http://www.bagdum.rmnkot.pp.ua/",
+			"lable": "www.bagdum.rmnkot.pp.ua"
+		}
+	},
+
+	"miami": {
+		"thumbnail": {
+			"arg": "#miami",
+			"src": "img/thumb/miami.jpg",
+			"section": "WEB",
+			"title": "МАЯМІ",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "miami",
+			"src1": "img/proj_img/miami/miami1.jpg",
+			"src2": "img/proj_img/miami/miami2.jpg",
+			"src3": "img/proj_img/miami/miami3.jpg",
+			"title": "МАЯМІ",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Навчання",
+			"description": "Цей проект був повністю побудований на основі CSS Grid. Мобільна адаптація тут не передбачалася.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
+			"link": "http://www.miami.rmnkot.pp.ua/",
+			"lable": "www.miami.rmnkot.pp.ua"
+		}
+	},
+
+	"mountain": {
+		"thumbnail": {
+			"arg": "#mountain",
+			"src": "img/thumb/mountain.jpg",
+			"section": "WEB",
+			"title": "ГОРИ",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "mountain",
+			"src1": "img/proj_img/mountain/mountain1.jpg",
+			"src2": "img/proj_img/mountain/mountain2.jpg",
+			"src3": "img/proj_img/mountain/mountain3.jpg",
+			"title": "ГОРИ",
+			"section": "WEB | 2018",
+			"cl_tag": "Клієнт:",
+			"client": "Навчання",
+			"description": "Цей проект був повністю побудований на основі CSS Grid. Мобільна адаптація тут не передбачалася.",
+			"link_tag": "Ви можете знайти цей вебсайт тут:",
+			"link": "http://www.mountain.rmnkot.pp.ua/",
+			"lable": "www.mountain.rmnkot.pp.ua"
 		}
 	}
 }

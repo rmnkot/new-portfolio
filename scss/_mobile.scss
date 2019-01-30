@@ -1,9 +1,26 @@
 // // LG
-// @media screen and (max-width: 1199.98px) {
-//   // Work
+@media screen and (max-width: 1199.98px) {
 
+  // Portfolio modal
+  #portfolio-container {
+    width: 980px;
+    height: 632px;
+  }
 
-// }
+  .portfolio-content {
+    .portfolio-right {
+      span:nth-child(1) {
+        margin-top: 37px;
+      }
+
+      span:nth-child(5) {
+        margin-top: 20px;
+        max-height: 250px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
 
 
 // MD
@@ -142,6 +159,56 @@
   #contact-btn {
     height: 50px;
   }
+
+  // Portfolio modal
+
+  #portfolio-container {
+    top: -50px;
+    width: 720px;
+    height: 1155px;
+
+    .fa-times-circle {
+      top: 15px;
+      right: 15px;
+      color: #717072;
+    }
+
+    #bw,
+    #fw {
+      top: 31%;
+    }
+
+    #fw {
+      right: 15px;
+    }
+
+    #prev-btn {
+      left: 455px;
+    }
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+
+    .portfolio-left {
+      flex-basis: initial;
+    }
+
+    .portfolio-right {
+      flex-basis: initial;
+
+      span:nth-child(1) {
+        margin-top: 37px;
+      }
+
+      span:nth-child(5) {
+        margin-top: 20px;
+        max-height: 250px;
+        overflow-y: auto;
+      }
+    }
+  }
+
 
 }
 
@@ -417,6 +484,25 @@
     margin-right: 3px;
   }
 
+  // Portfolio modal
+
+  #portfolio-container {
+    width: 520px;
+    height: 1020px;
+
+
+    #bw,
+    #fw {
+      top: 25%;
+    }
+
+    #prev-btn {
+      left: 264px;
+    }
+  }
+
+
+
 
 }
 
@@ -611,5 +697,46 @@
   #contact-btn {
     margin-right: 0;
   }
+
+  // Portfolio modal
+
+  #portfolio {
+    height: 110%;
+  }
+
+  #portfolio-container {
+    width: 300px;
+    height: initial;
+    top: -65px;
+
+
+    #bw,
+    #fw {
+      top: 160px;
+    }
+
+    #prev-btn,
+    #next-btn {
+      display: none;
+    }
+  }
+
+  .portfolio-content {
+    flex-direction: column;
+
+    .portfolio-right {
+
+      span:nth-child(1) {
+        margin-top: 28px;
+        font-size: 27px;
+        padding-right: 15px;
+      }
+
+      span:nth-child(5) {
+        max-height: 500px;
+      }
+    }
+  }
+
 
 }

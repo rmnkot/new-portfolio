@@ -17,6 +17,7 @@
 			"cl_tag": "Client:",
 			"client": "D.Abdurachmanov",
 			"description": "This work has been made from scratch according designers mockup",
+			"link_tag": "You can find this website here",
 			"link": "http://cz.rmnkot.pp.ua/",
 			"lable": "cz.rmnkot.pp.ua"
 		}
@@ -40,6 +41,7 @@
 			"cl_tag": "Client:",
 			"client": "Me",
 			"description": "This time I've decided to use Bootstrap grid system and build custom CSS styles and JavaScript on the top of it. As a design lead, free template was taken but responsiveness was created by myself.",
+			"link_tag": "You can find this website here",
 			"link": "http://rmnkot.pp.ua/",
 			"lable": "rmnkot.pp.ua"
 		}
@@ -62,7 +64,8 @@
 			"section": "WEB | 2018",
 			"cl_tag": "Client:",
 			"client": "Selezione",
-			"description": "This particular project was built on the demand of the client about a simple internet store. So, it was decided to choose free WordPress template with WooCommerce.That template was restyled and receive different modifications due to client 's vision of the final product.",
+			"description": "This particular project was built on the demand of the client about a simple internet store. So, it was decided to choose free WordPress template with WooCommerce. That template was restyled and receive different modifications due to client's vision of the final product.",
+			"link_tag": "You can find this website here",
 			"link": "http://selezione.rmnkot.pp.ua/",
 			"lable": "selezione.rmnkot.pp.ua"
 		}
@@ -86,6 +89,7 @@
 			"cl_tag": "Client:",
 			"client": "S.Pidlypska",
 			"description": "This project was built totaly from scratch either code and design.",
+			"link_tag": "You can find this website here",
 			"link": "http://www.base.rmnkot.pp.ua/",
 			"lable": "www.base.rmnkot.pp.ua"
 		}
@@ -109,31 +113,105 @@
 			"cl_tag": "Client:",
 			"client": "S.Pidlypska",
 			"description": "This portfolio landing page was built by utilizing and deeply modifying free template. Changes were apply only to HTML and CSS.",
+			"link_tag": "You can find this website here",
 			"link": "http://www.svet.rmnkot.pp.ua/",
 			"lable": "www.svet.rmnkot.pp.ua"
 		}
 	},
 
-	"fex": {
+	"game": {
 		"thumbnail": {
-			"arg": "#fex",
-			"src": "img/thumb/fex_main.jpg",
-			"section": "WEB",
-			"title": "FEX.NET COPY",
+			"arg": "#game",
+			"src": "img/thumb/game.jpg",
+			"section": "GAMES",
+			"title": "SIMPLE GAME",
 			"year": "2018"
 		},
 		"modal": {
-			"id": "fex",
-			"src1": "img/proj_img/fex/fex.jpg",
-			"src2": "img/proj_img/fex/fex.jpg",
-			"src3": "img/proj_img/fex/fex.jpg",
-			"title": "FEX.NET COPY",
+			"id": "game",
+			"src1": "img/proj_img/game/game1.jpg",
+			"src2": "img/proj_img/game/game2.jpg",
+			"src3": "img/proj_img/game/game3.jpg",
+			"title": "SIMPLE GAME",
+			"section": "GAMES | 2018",
+			"cl_tag": "Client:",
+			"client": "Studying purpose",
+			"description": "Simple game on JavaScript with CSS Grid for game field generating. Tested in Google Chrome.",
+			"link_tag": "You can find this website here",
+			"link": "http://www.game.rmnkot.pp.ua/",
+			"lable": "www.game.rmnkot.pp.ua"
+		}
+	},
+
+	"bagdum": {
+		"thumbnail": {
+			"arg": "#bagdum",
+			"src": "img/thumb/bagdum.jpg",
+			"section": "WEB",
+			"title": "BAGDUM",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "bagdum",
+			"src1": "img/proj_img/bagdum/bagdum1.jpg",
+			"src2": "img/proj_img/bagdum/bagdum2.jpg",
+			"src3": "img/proj_img/bagdum/bagdum3.jpg",
+			"title": "BAGDUM",
 			"section": "WEB | 2018",
 			"cl_tag": "Client:",
 			"client": "Studying purpose",
-			"description": "Pixel perfect copy of FEX.NET front page.",
-			"link": "http://www.fex.rmnkot.pp.ua/",
-			"lable": "www.fex.rmnkot.pp.ua"
+			"description": "This site was made with \"smart-grid\" - custom Flexbox grid on SCSS mixins. The main goals of this project were new project structure and responsiveness polishing.",
+			"link_tag": "You can find this website here",
+			"link": "http://www.bagdum.rmnkot.pp.ua/",
+			"lable": "www.bagdum.rmnkot.pp.ua"
+		}
+	},
+
+	"miami": {
+		"thumbnail": {
+			"arg": "#miami",
+			"src": "img/thumb/miami.jpg",
+			"section": "WEB",
+			"title": "MIAMI",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "miami",
+			"src1": "img/proj_img/miami/miami1.jpg",
+			"src2": "img/proj_img/miami/miami2.jpg",
+			"src3": "img/proj_img/miami/miami3.jpg",
+			"title": "MIAMI",
+			"section": "WEB | 2018",
+			"cl_tag": "Client:",
+			"client": "Studying purpose",
+			"description": "Here CSS Grid was used for complete layout. Mobile adaptation is not provided here.",
+			"link_tag": "You can find this website here",
+			"link": "http://www.miami.rmnkot.pp.ua/",
+			"lable": "www.miami.rmnkot.pp.ua"
+		}
+	},
+
+	"mountain": {
+		"thumbnail": {
+			"arg": "#mountain",
+			"src": "img/thumb/mountain.jpg",
+			"section": "WEB",
+			"title": "MOUNTAINS",
+			"year": "2018"
+		},
+		"modal": {
+			"id": "mountain",
+			"src1": "img/proj_img/mountain/mountain1.jpg",
+			"src2": "img/proj_img/mountain/mountain2.jpg",
+			"src3": "img/proj_img/mountain/mountain3.jpg",
+			"title": "MOUNTAINS",
+			"section": "WEB | 2018",
+			"cl_tag": "Client:",
+			"client": "Studying purpose",
+			"description": "Here CSS Grid was used for complete layout. Mobile adaptation is not provided here.",
+			"link_tag": "You can find this website here",
+			"link": "http://www.mountain.rmnkot.pp.ua/",
+			"lable": "www.mountain.rmnkot.pp.ua"
 		}
 	}
 }

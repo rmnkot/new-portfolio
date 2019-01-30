@@ -306,18 +306,18 @@ function createModal(obj) {
   el.id = obj[x].modal.id;
   el.className = "row portfolio-content";
   el.innerHTML = `
-    <div class="col-8 portfolio-left">
+    <div class="col-12 col-lg-8 portfolio-left">
       <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="${obj[x].modal.src1}" alt="first image">
       <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="${obj[x].modal.src2}" alt="second image">
       <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="${obj[x].modal.src3}" alt="third image">
     </div>
-    <div class="col-4 portfolio-right">
+    <div class="col-12 col-lg-4 portfolio-right">
       <span>${obj[x].modal.title}</span>
       <span>${obj[x].modal.section}</span>
       <span>${obj[x].modal.cl_tag}</span>
       <span>${obj[x].modal.client}</span>
       <span>${obj[x].modal.description}</span>
-      <span>You can find this website here:</span>
+      <span>${obj[x].modal.link_tag}:</span>
       <a class="site-link" target="_blank" rel="noreferrer" href="${obj[x].modal.link}">${obj[x].modal.lable}</a>
     </div>
   `
