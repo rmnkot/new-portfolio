@@ -33,16 +33,18 @@
   <div id="nav-bar" class="container">
     <div class="row d-flex align-items-center">
       <div class="col-10 col-md-4 col-lg-6 align-items-center d-flex">
-        <div id="avatar">
+        <a href="#about" id="avatar">
           <img src="img/photo/ava.jpg" alt="ava1">
-        </div>
+        </a>
         <div id="person">
           <div id="name">Роман Кот</div>
           <div id="profession">"Front-End" Розробник</div>
         </div>
       </div>
       <div id="drop" class="col-2 align-items-center justify-content-center">
-        <div id="x-btn" onclick="openBurger()"></div>
+        <div class="x-container" onclick="openBurger()">
+          <div id="x-btn"></div>
+        </div>
       </div>
       <div id="nav-menu" class="d-flex justify-content-around align-items-center col-md-5 col-lg-4">
         <a href="#top">ТОП</a>
@@ -83,7 +85,7 @@
             </div>
             <div id="top-btn-block">
               <div id="top-btn1" class="btn" onclick="openModal('#contact')">НАЙНЯТИ</div>
-              <div id="top-btn2" class="btn" onclick="openModal('#resume')">РЕЗЮМЕ</div>
+              <!-- <div id="top-btn2" class="btn" onclick="openModal('#resume')">РЕЗЮМЕ</div> -->
             </div>
           </div>
         </div>
@@ -124,7 +126,7 @@
         </div>
         <div id="about-btn-block">
           <div id="about-btn1" class="btn" onclick="openModal('#contact')">НАЙНЯТИ</div>
-          <div id="about-btn2" class="btn" onclick="openModal('#resume')">РЕЗЮМЕ</div>
+          <!-- <div id="about-btn2" class="btn" onclick="openModal('#resume')">РЕЗЮМЕ</div> -->
         </div>
       </div>
     </div>
